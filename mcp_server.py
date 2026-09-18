@@ -63,6 +63,66 @@ def read_project_file(path: str) -> str:
     return file_path.read_text(encoding="utf-8")
 
 @server.tool()
+def search_project(text: str) -> list:
+    """
+    Search the Godot project source files for text.
+
+    Searches:
+    - GDScript (.gd)
+    - Scenes (.tscn)
+    - Resources (.tres)
+    - Project configuration (.godot)
+
+    Returns matching files and line numbers.
+    """
+
+    results = []
+
+    searchable_extensions = {
+        ".gd",
+        ".tscn",
+        ".tres",
+        ".godot",
+    }
+
+    search_text = text.lower()
+
+    for path in GODOT_PROJECT.rglob("*"):
+        if not path.is_file():
+            continue
+
+        if path.suffix.lower() not in searchable_extensions:
+            continue
+
+        try:
+            lines = path.read_text(
+                encoding="utf-8",
+                errors="ignore"
+            ).splitlines()
+
+        except Exception:
+            continue
+
+        matches = []
+
+        for line_number, line in enumerate(lines, start=1):
+            if search_text in line.lower():
+                matches.append({
+                    "line": line_number,
+                    "text": line.strip(),
+                })
+
+        if matches:
+            relative_path = path.relative_to(GODOT_PROJECT)
+
+            results.append({
+                "file": "res://" + str(relative_path).replace("\\", "/"),
+                "matches": matches,
+            })
+
+    return results
+
+@server.tool()
 def get_context(path: str) -> dict:
     """
     Get useful coding context for a Godot script.

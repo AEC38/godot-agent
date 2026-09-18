@@ -1,125 +1,222 @@
 from pathlib import Path
-import re
 import json
+import subprocess
 
 GODOT_PROJECT = Path(r"C:\Users\berke\OneDrive\Desktop\silicon_frontier")
-
 OUTPUT_FILE = Path("index.json")
 
 
+NODE_PARSER = r"""
+const fs = require("fs");
+const Parser = require("tree-sitter");
+const GDScript = require("tree-sitter-gdscript");
+
+const file = process.argv[2];
+
+const source = fs.readFileSync(file, "utf8");
+
+const parser = new Parser();
+parser.setLanguage(GDScript);
+
+const tree = parser.parse(
+    source,
+    undefined,
+    { bufferSize: 1024 * 1024 }
+);
+
+function getText(node) {
+    return source.slice(node.startIndex, node.endIndex);
+}
+
+function walk(node, result) {
+
+    if (node.type === "extends_statement") {
+        const typeNode = node.childForFieldName("type");
+
+        if (typeNode) {
+            result.extends = getText(typeNode);
+        }
+    }
+
+    if (node.type === "class_definition") {
+        const nameNode = node.childForFieldName("name");
+
+        if (nameNode) {
+            result.class = getText(nameNode);
+        }
+    }
+
+    if (node.type === "function_definition") {
+        const nameNode = node.childForFieldName("name");
+
+        if (nameNode) {
+            result.functions.push(getText(nameNode));
+        }
+    }
+
+    if (node.type === "variable_statement") {
+        const nameNode = node.childForFieldName("name");
+
+        if (nameNode) {
+            result.variables.push(getText(nameNode));
+        }
+    }
+
+    if (node.type === "call") {
+        const functionNode = node.namedChildren[0];
+
+        if (functionNode) {
+            result.calls.push({
+                name: getText(functionNode),
+                type: functionNode.type
+            });
+        }
+    }
+
+    if (
+        node.type === "attribute" &&
+        node.namedChildren.length >= 2
+    ) {
+        const objectNode = node.namedChildren[0];
+        const memberNode = node.namedChildren[1];
+
+        result.attributes.push({
+            object: getText(objectNode),
+            member: getText(memberNode)
+        });
+    }
+
+    if (node.type === "preload" || node.type === "load") {
+        result.loads.push(getText(node));
+    }
+
+    for (const child of node.namedChildren) {
+        walk(child, result);
+    }
+}
+
+const result = {
+    class: null,
+    extends: null,
+    functions: [],
+    variables: [],
+    calls: [],
+    attributes: [],
+    loads: []
+};
+
+walk(tree.rootNode, result);
+
+console.log(JSON.stringify(result));
+"""
+
+
+def parse_gdscript(path: Path):
+    temp_file = Path("_ast_parser.js")
+
+    temp_file.write_text(
+        NODE_PARSER,
+        encoding="utf-8"
+    )
+
+    try:
+        completed = subprocess.run(
+            ["node", str(temp_file), str(path)],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            check=True
+        )
+
+        return json.loads(completed.stdout)
+
+    finally:
+        if temp_file.exists():
+            temp_file.unlink()
+
+
+def build_class_references(parsed):
+    references = set()
+
+    for attribute in parsed["attributes"]:
+        receiver = attribute["object"]
+
+        if receiver and receiver[0].isupper():
+            references.add(receiver)
+
+    for call in parsed["calls"]:
+        name = call["name"]
+
+        if name and name[0].isupper():
+            references.add(name)
+
+    return sorted(references)
+
+
 def scan_gdscript(path: Path):
-    content = path.read_text(encoding="utf-8", errors="ignore")
+    parsed = parse_gdscript(path)
 
-    class_match = re.search(
-        r"^\s*class_name\s+(\w+)",
-        content,
-        re.MULTILINE
-    )
+    class_name = parsed["class"]
 
-    extends_match = re.search(
-        r"^\s*extends\s+(.+)",
-        content,
-        re.MULTILINE
-    )
-
-    signals = re.findall(
-        r"^\s*signal\s+(\w+)",
-        content,
-        re.MULTILINE
-    )
-
-    functions = re.findall(
-        r"^\s*func\s+(\w+)",
-        content,
-        re.MULTILINE
-    )
-
-    # Detect preload/load references
-    preloads = re.findall(
-        r"(?:preload|load)\s*\(\s*[\"']([^\"']+)[\"']\s*\)",
-        content
-    )
-
-    # Detect likely class references.
-    # We look for classes used as constructors or static access.
-    class_references = set()
-
-    # Constructor-style usage:
-    # Example: Inventory.new()
-    #          Vector3(...)
-    #          Label3D.new()
-    for match in re.finditer(
-        r"\b([A-Z][A-Za-z0-9_]*)\s*\.",
-        content
-    ):
-        class_references.add(match.group(1))
-
-    # Constructor/function-call usage:
-    # Example: Vector3(...)
-    #          Transform3D(...)
-    for match in re.finditer(
-        r"\b([A-Z][A-Za-z0-9_]*)\s*\(",
-        content
-    ):
-        class_references.add(match.group(1))
-
-    # Remove the script's own class name
-    if class_match:
-        class_references.discard(class_match.group(1))
-
-    class_references = sorted(class_references)
+    class_references = build_class_references(parsed)
 
     return {
         "file": str(path.relative_to(GODOT_PROJECT)),
-        "class": class_match.group(1) if class_match else None,
-        "extends": extends_match.group(1).strip() if extends_match else None,
-        "signals": signals,
-        "functions": functions,
-        "preloads": preloads,
+        "class": class_name,
+        "extends": parsed["extends"],
+        "signals": [],
+        "functions": parsed["functions"],
+        "variables": parsed["variables"],
+        "preloads": [],
         "class_references": class_references,
+        "calls": parsed["calls"],
+        "attributes": parsed["attributes"],
+        "relationships": []
     }
 
 
 def main():
+
     gd_files = list(GODOT_PROJECT.rglob("*.gd"))
 
     scripts = []
 
     for path in gd_files:
-        scripts.append(scan_gdscript(path))
 
-    # ---------------------------------------------------------
-    # Build class -> file lookup
-    # ---------------------------------------------------------
+        try:
+            result = scan_gdscript(path)
+            scripts.append(result)
+
+        except Exception as error:
+            print(f"Failed to parse {path}: {error}")
 
     class_to_file = {}
 
     for script in scripts:
+
         class_name = script["class"]
 
         if class_name:
             class_to_file[class_name] = script["file"]
 
-    # ---------------------------------------------------------
-    # Resolve class relationships
-    # ---------------------------------------------------------
-
     for script in scripts:
+
         relationships = []
 
-        # Inheritance relationship
         parent_class = script["extends"]
 
         if parent_class in class_to_file:
+
             relationships.append({
                 "type": "extends",
                 "class": parent_class,
                 "file": class_to_file[parent_class]
             })
 
-        # Usage relationships
         for reference in script["class_references"]:
+
             if reference in class_to_file:
+
                 relationships.append({
                     "type": "uses",
                     "class": reference,
@@ -127,10 +224,6 @@ def main():
                 })
 
         script["relationships"] = relationships
-
-    # ---------------------------------------------------------
-    # Save index
-    # ---------------------------------------------------------
 
     index = {
         "project": GODOT_PROJECT.name,
