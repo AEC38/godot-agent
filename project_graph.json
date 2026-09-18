@@ -1,0 +1,3411 @@
+{
+  "nodes": [
+    {
+      "id": "script:test_matrix.gd",
+      "type": "script",
+      "name": "test_matrix.gd"
+    },
+    {
+      "id": "script:Character\\character.gd",
+      "type": "script",
+      "name": "Character\\character.gd"
+    },
+    {
+      "id": "script:Character\\inventory_ui.gd",
+      "type": "script",
+      "name": "Character\\inventory_ui.gd"
+    },
+    {
+      "id": "script:Character\\tool_manager.gd",
+      "type": "script",
+      "name": "Character\\tool_manager.gd"
+    },
+    {
+      "id": "script:Scripts\\debug_inventory.gd",
+      "type": "script",
+      "name": "Scripts\\debug_inventory.gd"
+    },
+    {
+      "id": "script:Scripts\\inventory.gd",
+      "type": "script",
+      "name": "Scripts\\inventory.gd"
+    },
+    {
+      "id": "script:Scripts\\item_data.gd",
+      "type": "script",
+      "name": "Scripts\\item_data.gd"
+    },
+    {
+      "id": "script:Scripts\\item_instance.gd",
+      "type": "script",
+      "name": "Scripts\\item_instance.gd"
+    },
+    {
+      "id": "script:Scripts\\machine.gd",
+      "type": "script",
+      "name": "Scripts\\machine.gd"
+    },
+    {
+      "id": "script:Scripts\\player_interaction.gd",
+      "type": "script",
+      "name": "Scripts\\player_interaction.gd"
+    },
+    {
+      "id": "script:Scripts\\Tool.gd",
+      "type": "script",
+      "name": "Scripts\\Tool.gd"
+    },
+    {
+      "id": "script:tests\\test_digital_logic.gd",
+      "type": "script",
+      "name": "tests\\test_digital_logic.gd"
+    },
+    {
+      "id": "script:tests\\test_mna_circuit.gd",
+      "type": "script",
+      "name": "tests\\test_mna_circuit.gd"
+    },
+    {
+      "id": "script:tests\\test_transistor_components.gd",
+      "type": "script",
+      "name": "tests\\test_transistor_components.gd"
+    },
+    {
+      "id": "script:UI\\inventory_slot.gd",
+      "type": "script",
+      "name": "UI\\inventory_slot.gd"
+    },
+    {
+      "id": "script:UI\\spin_coater_ui.gd",
+      "type": "script",
+      "name": "UI\\spin_coater_ui.gd"
+    },
+    {
+      "id": "script:UI\\wafer_analyzer_ui.gd",
+      "type": "script",
+      "name": "UI\\wafer_analyzer_ui.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_junction.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_junction.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_net.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_net.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_simulation_result.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_simulation_result.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_validator.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_validator.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\main.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\property_editor.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\property_editor.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_canvas.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_canvas.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\terminal.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\terminal.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\transient_voltage_plot.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\transient_voltage_plot.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_preview.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_preview.gd"
+    },
+    {
+      "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "type": "script",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd"
+    },
+    {
+      "id": "script:Machines\\Scenes\\silicon_purifier.gd",
+      "type": "script",
+      "name": "Machines\\Scenes\\silicon_purifier.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\dust_collector.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\dust_collector.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\dust_patch.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\dust_patch.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\silicon_growth_furnace.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\silicon_growth_furnace.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\silicon_processor.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\silicon_processor.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\spin_coater.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\spin_coater.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\wafer_analyzer.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\wafer_analyzer.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\wafer_slicer.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\wafer_slicer.gd"
+    },
+    {
+      "id": "script:addons\\gd_mna_solver\\matrix_math.gd",
+      "type": "script",
+      "name": "addons\\gd_mna_solver\\matrix_math.gd"
+    },
+    {
+      "id": "script:addons\\gd_mna_solver\\mna_circuit.gd",
+      "type": "script",
+      "name": "addons\\gd_mna_solver\\mna_circuit.gd"
+    },
+    {
+      "id": "script:addons\\gd_mna_solver\\plugin.gd",
+      "type": "script",
+      "name": "addons\\gd_mna_solver\\plugin.gd"
+    },
+    {
+      "id": "class:Inventory",
+      "type": "class",
+      "name": "Inventory"
+    },
+    {
+      "id": "class:ItemData",
+      "type": "class",
+      "name": "ItemData"
+    },
+    {
+      "id": "class:ItemInstance",
+      "type": "class",
+      "name": "ItemInstance"
+    },
+    {
+      "id": "class:Machine",
+      "type": "class",
+      "name": "Machine"
+    },
+    {
+      "id": "class:Tool",
+      "type": "class",
+      "name": "Tool"
+    },
+    {
+      "id": "class:InventorySlot",
+      "type": "class",
+      "name": "InventorySlot"
+    },
+    {
+      "id": "class:CircuitConnection",
+      "type": "class",
+      "name": "CircuitConnection"
+    },
+    {
+      "id": "class:CircuitGraph",
+      "type": "class",
+      "name": "CircuitGraph"
+    },
+    {
+      "id": "class:CircuitJunction",
+      "type": "class",
+      "name": "CircuitJunction"
+    },
+    {
+      "id": "class:ElectricalNet",
+      "type": "class",
+      "name": "ElectricalNet"
+    },
+    {
+      "id": "class:CircuitSimulationResult",
+      "type": "class",
+      "name": "CircuitSimulationResult"
+    },
+    {
+      "id": "class:CircuitTransientSettings",
+      "type": "class",
+      "name": "CircuitTransientSettings"
+    },
+    {
+      "id": "class:CircuitValidator",
+      "type": "class",
+      "name": "CircuitValidator"
+    },
+    {
+      "id": "class:CircuitWire",
+      "type": "class",
+      "name": "CircuitWire"
+    },
+    {
+      "id": "class:ComponentData",
+      "type": "class",
+      "name": "ComponentData"
+    },
+    {
+      "id": "class:ComponentRegistry",
+      "type": "class",
+      "name": "ComponentRegistry"
+    },
+    {
+      "id": "class:DigitalLogicSimulator",
+      "type": "class",
+      "name": "DigitalLogicSimulator"
+    },
+    {
+      "id": "class:DigitalValidator",
+      "type": "class",
+      "name": "DigitalValidator"
+    },
+    {
+      "id": "class:HistoryManager",
+      "type": "class",
+      "name": "HistoryManager"
+    },
+    {
+      "id": "class:NetLabel",
+      "type": "class",
+      "name": "NetLabel"
+    },
+    {
+      "id": "class:PropertyEditor",
+      "type": "class",
+      "name": "PropertyEditor"
+    },
+    {
+      "id": "class:SchematicCanvas",
+      "type": "class",
+      "name": "SchematicCanvas"
+    },
+    {
+      "id": "class:SchematicComponent",
+      "type": "class",
+      "name": "SchematicComponent"
+    },
+    {
+      "id": "class:SchematicEditor",
+      "type": "class",
+      "name": "SchematicEditor"
+    },
+    {
+      "id": "class:SchematicVerificationResult",
+      "type": "class",
+      "name": "SchematicVerificationResult"
+    },
+    {
+      "id": "class:CircuitTerminal",
+      "type": "class",
+      "name": "CircuitTerminal"
+    },
+    {
+      "id": "class:TransientVoltagePlot",
+      "type": "class",
+      "name": "TransientVoltagePlot"
+    },
+    {
+      "id": "class:WirePreview",
+      "type": "class",
+      "name": "WirePreview"
+    },
+    {
+      "id": "class:WireRouter",
+      "type": "class",
+      "name": "WireRouter"
+    },
+    {
+      "id": "class:DustCollector",
+      "type": "class",
+      "name": "DustCollector"
+    },
+    {
+      "id": "class:WaferAnalyzer",
+      "type": "class",
+      "name": "WaferAnalyzer"
+    },
+    {
+      "id": "class:MatrixMath",
+      "type": "class",
+      "name": "MatrixMath"
+    },
+    {
+      "id": "class:MNACircuit",
+      "type": "class",
+      "name": "MNACircuit"
+    },
+    {
+      "id": "scene:digital_designer.tscn",
+      "type": "scene",
+      "name": "digital_designer.tscn"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalDesigner",
+      "type": "node",
+      "name": "DigitalDesigner"
+    },
+    {
+      "id": "node:digital_designer.tscn:SchematicEditor",
+      "type": "node",
+      "name": "SchematicEditor"
+    },
+    {
+      "id": "node:digital_designer.tscn:SchematicCanvas",
+      "type": "node",
+      "name": "SchematicCanvas"
+    },
+    {
+      "id": "node:digital_designer.tscn:Toolbar",
+      "type": "node",
+      "name": "Toolbar"
+    },
+    {
+      "id": "node:digital_designer.tscn:AddComponentButton",
+      "type": "node",
+      "name": "AddComponentButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:SimulateButton",
+      "type": "node",
+      "name": "SimulateButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:VerifyDesignButton",
+      "type": "node",
+      "name": "VerifyDesignButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:ClearEditorButton",
+      "type": "node",
+      "name": "ClearEditorButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:SaveSchematicButton",
+      "type": "node",
+      "name": "SaveSchematicButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:LoadSchematicButton",
+      "type": "node",
+      "name": "LoadSchematicButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:ResetViewButton",
+      "type": "node",
+      "name": "ResetViewButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:SchematicFileDialog",
+      "type": "node",
+      "name": "SchematicFileDialog"
+    },
+    {
+      "id": "node:digital_designer.tscn:ComponentChooser",
+      "type": "node",
+      "name": "ComponentChooser"
+    },
+    {
+      "id": "node:digital_designer.tscn:ScrollContainer",
+      "type": "node",
+      "name": "ScrollContainer"
+    },
+    {
+      "id": "node:digital_designer.tscn:VBoxContainer",
+      "type": "node",
+      "name": "VBoxContainer"
+    },
+    {
+      "id": "node:digital_designer.tscn:Label",
+      "type": "node",
+      "name": "Label"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalNotButton",
+      "type": "node",
+      "name": "DigitalNotButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalAnd2Button",
+      "type": "node",
+      "name": "DigitalAnd2Button"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalOr2Button",
+      "type": "node",
+      "name": "DigitalOr2Button"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalXor2Button",
+      "type": "node",
+      "name": "DigitalXor2Button"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalXnor2Button",
+      "type": "node",
+      "name": "DigitalXnor2Button"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalBufferButton",
+      "type": "node",
+      "name": "DigitalBufferButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalNand2Button",
+      "type": "node",
+      "name": "DigitalNand2Button"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalNor2Button",
+      "type": "node",
+      "name": "DigitalNor2Button"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalInputButton",
+      "type": "node",
+      "name": "DigitalInputButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:DigitalOutputButton",
+      "type": "node",
+      "name": "DigitalOutputButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:VddButton",
+      "type": "node",
+      "name": "VddButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:GroundButton",
+      "type": "node",
+      "name": "GroundButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:CancelButton",
+      "type": "node",
+      "name": "CancelButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:PanelContainer",
+      "type": "node",
+      "name": "PanelContainer"
+    },
+    {
+      "id": "node:digital_designer.tscn:PropertiesPanel",
+      "type": "node",
+      "name": "PropertiesPanel"
+    },
+    {
+      "id": "node:digital_designer.tscn:SimulationResultsPanel",
+      "type": "node",
+      "name": "SimulationResultsPanel"
+    },
+    {
+      "id": "node:digital_designer.tscn:ContentContainer",
+      "type": "node",
+      "name": "ContentContainer"
+    },
+    {
+      "id": "node:digital_designer.tscn:Header",
+      "type": "node",
+      "name": "Header"
+    },
+    {
+      "id": "node:digital_designer.tscn:Title",
+      "type": "node",
+      "name": "Title"
+    },
+    {
+      "id": "node:digital_designer.tscn:CloseButton",
+      "type": "node",
+      "name": "CloseButton"
+    },
+    {
+      "id": "node:digital_designer.tscn:ScrollContainer",
+      "type": "node",
+      "name": "ScrollContainer"
+    },
+    {
+      "id": "node:digital_designer.tscn:Content",
+      "type": "node",
+      "name": "Content"
+    },
+    {
+      "id": "scene:level_1.tscn",
+      "type": "scene",
+      "name": "level_1.tscn"
+    },
+    {
+      "id": "node:level_1.tscn:Level1",
+      "type": "node",
+      "name": "Level1"
+    },
+    {
+      "id": "node:level_1.tscn:WorldEnvironment",
+      "type": "node",
+      "name": "WorldEnvironment"
+    },
+    {
+      "id": "node:level_1.tscn:DirectionalLight3D",
+      "type": "node",
+      "name": "DirectionalLight3D"
+    },
+    {
+      "id": "node:level_1.tscn:Objects",
+      "type": "node",
+      "name": "Objects"
+    },
+    {
+      "id": "node:level_1.tscn:Room",
+      "type": "node",
+      "name": "Room"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch",
+      "type": "node",
+      "name": "DustPatch"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch2",
+      "type": "node",
+      "name": "DustPatch2"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch3",
+      "type": "node",
+      "name": "DustPatch3"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch4",
+      "type": "node",
+      "name": "DustPatch4"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch5",
+      "type": "node",
+      "name": "DustPatch5"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch6",
+      "type": "node",
+      "name": "DustPatch6"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch7",
+      "type": "node",
+      "name": "DustPatch7"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch8",
+      "type": "node",
+      "name": "DustPatch8"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch9",
+      "type": "node",
+      "name": "DustPatch9"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch10",
+      "type": "node",
+      "name": "DustPatch10"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch11",
+      "type": "node",
+      "name": "DustPatch11"
+    },
+    {
+      "id": "node:level_1.tscn:DustPatch12",
+      "type": "node",
+      "name": "DustPatch12"
+    },
+    {
+      "id": "node:level_1.tscn:character",
+      "type": "node",
+      "name": "character"
+    },
+    {
+      "id": "node:level_1.tscn:Machines",
+      "type": "node",
+      "name": "Machines"
+    },
+    {
+      "id": "node:level_1.tscn:SiliconProcessor",
+      "type": "node",
+      "name": "SiliconProcessor"
+    },
+    {
+      "id": "node:level_1.tscn:SiliconPurifier",
+      "type": "node",
+      "name": "SiliconPurifier"
+    },
+    {
+      "id": "node:level_1.tscn:silicon_growth_furnace",
+      "type": "node",
+      "name": "silicon_growth_furnace"
+    },
+    {
+      "id": "node:level_1.tscn:wafer_slicer",
+      "type": "node",
+      "name": "wafer_slicer"
+    },
+    {
+      "id": "node:level_1.tscn:SpinCoater",
+      "type": "node",
+      "name": "SpinCoater"
+    },
+    {
+      "id": "node:level_1.tscn:WaferAnalyzer",
+      "type": "node",
+      "name": "WaferAnalyzer"
+    },
+    {
+      "id": "scene:Room.tscn",
+      "type": "scene",
+      "name": "Room.tscn"
+    },
+    {
+      "id": "node:Room.tscn:Room",
+      "type": "node",
+      "name": "Room"
+    },
+    {
+      "id": "node:Room.tscn:Machines",
+      "type": "node",
+      "name": "Machines"
+    },
+    {
+      "id": "node:Room.tscn:Floor",
+      "type": "node",
+      "name": "Floor"
+    },
+    {
+      "id": "node:Room.tscn:StaticBody3D",
+      "type": "node",
+      "name": "StaticBody3D"
+    },
+    {
+      "id": "node:Room.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Room.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Room.tscn:Walls",
+      "type": "node",
+      "name": "Walls"
+    },
+    {
+      "id": "node:Room.tscn:Wall",
+      "type": "node",
+      "name": "Wall"
+    },
+    {
+      "id": "node:Room.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Room.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Room.tscn:Wall2",
+      "type": "node",
+      "name": "Wall2"
+    },
+    {
+      "id": "node:Room.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Room.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Room.tscn:Wall3",
+      "type": "node",
+      "name": "Wall3"
+    },
+    {
+      "id": "node:Room.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Room.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Room.tscn:Wall4",
+      "type": "node",
+      "name": "Wall4"
+    },
+    {
+      "id": "node:Room.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Room.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "scene:Character\\character.tscn",
+      "type": "scene",
+      "name": "Character\\character.tscn"
+    },
+    {
+      "id": "node:Character\\character.tscn:character",
+      "type": "node",
+      "name": "character"
+    },
+    {
+      "id": "node:Character\\character.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Character\\character.tscn:Camera3D",
+      "type": "node",
+      "name": "Camera3D"
+    },
+    {
+      "id": "node:Character\\character.tscn:RayCast3D",
+      "type": "node",
+      "name": "RayCast3D"
+    },
+    {
+      "id": "node:Character\\character.tscn:ToolManager",
+      "type": "node",
+      "name": "ToolManager"
+    },
+    {
+      "id": "node:Character\\character.tscn:DustCollector",
+      "type": "node",
+      "name": "DustCollector"
+    },
+    {
+      "id": "node:Character\\character.tscn:CanvasLayer",
+      "type": "node",
+      "name": "CanvasLayer"
+    },
+    {
+      "id": "node:Character\\character.tscn:InteractionLabel",
+      "type": "node",
+      "name": "InteractionLabel"
+    },
+    {
+      "id": "node:Character\\character.tscn:InventoryUI",
+      "type": "node",
+      "name": "InventoryUI"
+    },
+    {
+      "id": "node:Character\\character.tscn:Panel",
+      "type": "node",
+      "name": "Panel"
+    },
+    {
+      "id": "node:Character\\character.tscn:ItemGrid",
+      "type": "node",
+      "name": "ItemGrid"
+    },
+    {
+      "id": "node:Character\\character.tscn:SpinCoaterUI",
+      "type": "node",
+      "name": "SpinCoaterUI"
+    },
+    {
+      "id": "node:Character\\character.tscn:WaferAnalyzerUI",
+      "type": "node",
+      "name": "WaferAnalyzerUI"
+    },
+    {
+      "id": "node:Character\\character.tscn:Panel",
+      "type": "node",
+      "name": "Panel"
+    },
+    {
+      "id": "node:Character\\character.tscn:VBoxContainer",
+      "type": "node",
+      "name": "VBoxContainer"
+    },
+    {
+      "id": "node:Character\\character.tscn:TitleLabel",
+      "type": "node",
+      "name": "TitleLabel"
+    },
+    {
+      "id": "node:Character\\character.tscn:ResultsTitleLabel",
+      "type": "node",
+      "name": "ResultsTitleLabel"
+    },
+    {
+      "id": "node:Character\\character.tscn:ThicknessLabel",
+      "type": "node",
+      "name": "ThicknessLabel"
+    },
+    {
+      "id": "node:Character\\character.tscn:UniformityLabel",
+      "type": "node",
+      "name": "UniformityLabel"
+    },
+    {
+      "id": "node:Character\\character.tscn:DefectsLabel",
+      "type": "node",
+      "name": "DefectsLabel"
+    },
+    {
+      "id": "node:Character\\character.tscn:LoadButton",
+      "type": "node",
+      "name": "LoadButton"
+    },
+    {
+      "id": "node:Character\\character.tscn:UnloadButton",
+      "type": "node",
+      "name": "UnloadButton"
+    },
+    {
+      "id": "node:Character\\character.tscn:CloseButton",
+      "type": "node",
+      "name": "CloseButton"
+    },
+    {
+      "id": "node:Character\\character.tscn:Inventory",
+      "type": "node",
+      "name": "Inventory"
+    },
+    {
+      "id": "node:Character\\character.tscn:Interaction",
+      "type": "node",
+      "name": "Interaction"
+    },
+    {
+      "id": "node:Character\\character.tscn:DebugInventory",
+      "type": "node",
+      "name": "DebugInventory"
+    },
+    {
+      "id": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "type": "scene",
+      "name": "UI\\Scenes\\circuit_designer_ui.tscn"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:CircuitDesignerUI",
+      "type": "node",
+      "name": "CircuitDesignerUI"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:Panel",
+      "type": "node",
+      "name": "Panel"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:VBoxContainer",
+      "type": "node",
+      "name": "VBoxContainer"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:TitleLabel",
+      "type": "node",
+      "name": "TitleLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:ComponentsLabel",
+      "type": "node",
+      "name": "ComponentsLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:AddComponentButton",
+      "type": "node",
+      "name": "AddComponentButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:CircuitArea",
+      "type": "node",
+      "name": "CircuitArea"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:CircuitWorkspace",
+      "type": "node",
+      "name": "CircuitWorkspace"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:SelectedComponentLabel",
+      "type": "node",
+      "name": "SelectedComponentLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:PropertiesPanel",
+      "type": "node",
+      "name": "PropertiesPanel"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:ClearButton",
+      "type": "node",
+      "name": "ClearButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\circuit_designer_ui.tscn:CloseButton",
+      "type": "node",
+      "name": "CloseButton"
+    },
+    {
+      "id": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "type": "scene",
+      "name": "UI\\Scenes\\debug_inventory.tscn"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:DebugInventory",
+      "type": "node",
+      "name": "DebugInventory"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:Panel",
+      "type": "node",
+      "name": "Panel"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:VBoxContainer",
+      "type": "node",
+      "name": "VBoxContainer"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:Label",
+      "type": "node",
+      "name": "Label"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:AddDustButton",
+      "type": "node",
+      "name": "AddDustButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:AddRawSiliconButton",
+      "type": "node",
+      "name": "AddRawSiliconButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:AddPureSiliconButton",
+      "type": "node",
+      "name": "AddPureSiliconButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:AddWaferButton",
+      "type": "node",
+      "name": "AddWaferButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:ClearButton",
+      "type": "node",
+      "name": "ClearButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\debug_inventory.tscn:AddTestCoatedWaferButton",
+      "type": "node",
+      "name": "AddTestCoatedWaferButton"
+    },
+    {
+      "id": "scene:UI\\Scenes\\inventory_slot.tscn",
+      "type": "scene",
+      "name": "UI\\Scenes\\inventory_slot.tscn"
+    },
+    {
+      "id": "node:UI\\Scenes\\inventory_slot.tscn:InventorySlot",
+      "type": "node",
+      "name": "InventorySlot"
+    },
+    {
+      "id": "node:UI\\Scenes\\inventory_slot.tscn:TextureRect",
+      "type": "node",
+      "name": "TextureRect"
+    },
+    {
+      "id": "node:UI\\Scenes\\inventory_slot.tscn:Title",
+      "type": "node",
+      "name": "Title"
+    },
+    {
+      "id": "node:UI\\Scenes\\inventory_slot.tscn:Amount",
+      "type": "node",
+      "name": "Amount"
+    },
+    {
+      "id": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "type": "scene",
+      "name": "UI\\Scenes\\spin_coater_ui.tscn"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinCoaterUI",
+      "type": "node",
+      "name": "SpinCoaterUI"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:Panel",
+      "type": "node",
+      "name": "Panel"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:VBoxContainer",
+      "type": "node",
+      "name": "VBoxContainer"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:Title",
+      "type": "node",
+      "name": "Title"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:StatusLabel",
+      "type": "node",
+      "name": "StatusLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:WaferLabel",
+      "type": "node",
+      "name": "WaferLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:LoadWaferButton",
+      "type": "node",
+      "name": "LoadWaferButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:ResistLabel",
+      "type": "node",
+      "name": "ResistLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:ResistOption",
+      "type": "node",
+      "name": "ResistOption"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinSpeedLabel",
+      "type": "node",
+      "name": "SpinSpeedLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinSpeedSlider",
+      "type": "node",
+      "name": "SpinSpeedSlider"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinTimeLabel",
+      "type": "node",
+      "name": "SpinTimeLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinTimeSlider",
+      "type": "node",
+      "name": "SpinTimeSlider"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:TemperatureLabel",
+      "type": "node",
+      "name": "TemperatureLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:TemperatureSlider",
+      "type": "node",
+      "name": "TemperatureSlider"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:CollectWaferButton",
+      "type": "node",
+      "name": "CollectWaferButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:StartButton",
+      "type": "node",
+      "name": "StartButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\spin_coater_ui.tscn:CloseButton",
+      "type": "node",
+      "name": "CloseButton"
+    },
+    {
+      "id": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "type": "scene",
+      "name": "UI\\Scenes\\Circuit Designer\\main.tscn"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Main",
+      "type": "node",
+      "name": "Main"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SchematicEditor",
+      "type": "node",
+      "name": "SchematicEditor"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SchematicCanvas",
+      "type": "node",
+      "name": "SchematicCanvas"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Toolbar",
+      "type": "node",
+      "name": "Toolbar"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddComponentButton",
+      "type": "node",
+      "name": "AddComponentButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:PrintNetlistButton",
+      "type": "node",
+      "name": "PrintNetlistButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SimulateButton",
+      "type": "node",
+      "name": "SimulateButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientButton",
+      "type": "node",
+      "name": "TransientButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TestDividerButton",
+      "type": "node",
+      "name": "TestDividerButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ClearEditorButton",
+      "type": "node",
+      "name": "ClearEditorButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:VerifyDesignButton",
+      "type": "node",
+      "name": "VerifyDesignButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SaveSchematicButton",
+      "type": "node",
+      "name": "SaveSchematicButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:LoadSchematicButton",
+      "type": "node",
+      "name": "LoadSchematicButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ResetViewButton",
+      "type": "node",
+      "name": "ResetViewButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddNetLabelButton",
+      "type": "node",
+      "name": "AddNetLabelButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientStepLabel",
+      "type": "node",
+      "name": "TransientStepLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientStepSpinBox",
+      "type": "node",
+      "name": "TransientStepSpinBox"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientDurationLabel",
+      "type": "node",
+      "name": "TransientDurationLabel"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientDurationSpinBox",
+      "type": "node",
+      "name": "TransientDurationSpinBox"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SchematicFileDialog",
+      "type": "node",
+      "name": "SchematicFileDialog"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ComponentChooser",
+      "type": "node",
+      "name": "ComponentChooser"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ScrollContainer",
+      "type": "node",
+      "name": "ScrollContainer"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:VBoxContainer",
+      "type": "node",
+      "name": "VBoxContainer"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Label",
+      "type": "node",
+      "name": "Label"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ResistorButton",
+      "type": "node",
+      "name": "ResistorButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddCapacitorButton",
+      "type": "node",
+      "name": "AddCapacitorButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddDiodeButton",
+      "type": "node",
+      "name": "AddDiodeButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddNmosButton",
+      "type": "node",
+      "name": "AddNmosButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddPmosButton",
+      "type": "node",
+      "name": "AddPmosButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:BatteryButton",
+      "type": "node",
+      "name": "BatteryButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:VoltageSourceButton",
+      "type": "node",
+      "name": "VoltageSourceButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AcVoltageSourceButton",
+      "type": "node",
+      "name": "AcVoltageSourceButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:GroundButton",
+      "type": "node",
+      "name": "GroundButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:VddButton",
+      "type": "node",
+      "name": "VddButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:CancelButton",
+      "type": "node",
+      "name": "CancelButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:PanelContainer",
+      "type": "node",
+      "name": "PanelContainer"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:PropertiesPanel",
+      "type": "node",
+      "name": "PropertiesPanel"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SimulationResultsPanel",
+      "type": "node",
+      "name": "SimulationResultsPanel"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ContentContainer",
+      "type": "node",
+      "name": "ContentContainer"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Header",
+      "type": "node",
+      "name": "Header"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Title",
+      "type": "node",
+      "name": "Title"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:CloseButton",
+      "type": "node",
+      "name": "CloseButton"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ScrollContainer",
+      "type": "node",
+      "name": "ScrollContainer"
+    },
+    {
+      "id": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Content",
+      "type": "node",
+      "name": "Content"
+    },
+    {
+      "id": "scene:Machines\\Scenes\\dust_collector.tscn",
+      "type": "scene",
+      "name": "Machines\\Scenes\\dust_collector.tscn"
+    },
+    {
+      "id": "node:Machines\\Scenes\\dust_collector.tscn:DustCollector",
+      "type": "node",
+      "name": "DustCollector"
+    },
+    {
+      "id": "node:Machines\\Scenes\\dust_collector.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "scene:Machines\\Scenes\\dust_patch.tscn",
+      "type": "scene",
+      "name": "Machines\\Scenes\\dust_patch.tscn"
+    },
+    {
+      "id": "node:Machines\\Scenes\\dust_patch.tscn:DustPatch",
+      "type": "node",
+      "name": "DustPatch"
+    },
+    {
+      "id": "node:Machines\\Scenes\\dust_patch.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\dust_patch.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "scene:Machines\\Scenes\\silicon_growth_furnace.tscn",
+      "type": "scene",
+      "name": "Machines\\Scenes\\silicon_growth_furnace.tscn"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:silicon_growth_furnace",
+      "type": "node",
+      "name": "silicon_growth_furnace"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:Inventory",
+      "type": "node",
+      "name": "Inventory"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:Title",
+      "type": "node",
+      "name": "Title"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:ItemCount",
+      "type": "node",
+      "name": "ItemCount"
+    },
+    {
+      "id": "scene:Machines\\Scenes\\silicon_processor.tscn",
+      "type": "scene",
+      "name": "Machines\\Scenes\\silicon_processor.tscn"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_processor.tscn:SiliconProcessor",
+      "type": "node",
+      "name": "SiliconProcessor"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_processor.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_processor.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_processor.tscn:Title",
+      "type": "node",
+      "name": "Title"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_processor.tscn:ItemCount",
+      "type": "node",
+      "name": "ItemCount"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_processor.tscn:Inventory",
+      "type": "node",
+      "name": "Inventory"
+    },
+    {
+      "id": "scene:Machines\\Scenes\\silicon_purifier.tscn",
+      "type": "scene",
+      "name": "Machines\\Scenes\\silicon_purifier.tscn"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_purifier.tscn:SiliconPurifier",
+      "type": "node",
+      "name": "SiliconPurifier"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_purifier.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_purifier.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_purifier.tscn:Inventory",
+      "type": "node",
+      "name": "Inventory"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_purifier.tscn:ItemCount",
+      "type": "node",
+      "name": "ItemCount"
+    },
+    {
+      "id": "node:Machines\\Scenes\\silicon_purifier.tscn:Title",
+      "type": "node",
+      "name": "Title"
+    },
+    {
+      "id": "scene:Machines\\Scenes\\spin_coater.tscn",
+      "type": "scene",
+      "name": "Machines\\Scenes\\spin_coater.tscn"
+    },
+    {
+      "id": "node:Machines\\Scenes\\spin_coater.tscn:SpinCoater",
+      "type": "node",
+      "name": "SpinCoater"
+    },
+    {
+      "id": "node:Machines\\Scenes\\spin_coater.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\spin_coater.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\spin_coater.tscn:Inventory",
+      "type": "node",
+      "name": "Inventory"
+    },
+    {
+      "id": "scene:Machines\\Scenes\\wafer_analyzer.tscn",
+      "type": "scene",
+      "name": "Machines\\Scenes\\wafer_analyzer.tscn"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_analyzer.tscn:WaferAnalyzer",
+      "type": "node",
+      "name": "WaferAnalyzer"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_analyzer.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_analyzer.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_analyzer.tscn:Inventory",
+      "type": "node",
+      "name": "Inventory"
+    },
+    {
+      "id": "scene:Machines\\Scenes\\wafer_slicer.tscn",
+      "type": "scene",
+      "name": "Machines\\Scenes\\wafer_slicer.tscn"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_slicer.tscn:wafer_slicer",
+      "type": "node",
+      "name": "wafer_slicer"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_slicer.tscn:MeshInstance3D",
+      "type": "node",
+      "name": "MeshInstance3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_slicer.tscn:CollisionShape3D",
+      "type": "node",
+      "name": "CollisionShape3D"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_slicer.tscn:Inventory",
+      "type": "node",
+      "name": "Inventory"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_slicer.tscn:Title",
+      "type": "node",
+      "name": "Title"
+    },
+    {
+      "id": "node:Machines\\Scenes\\wafer_slicer.tscn:ItemCount",
+      "type": "node",
+      "name": "ItemCount"
+    }
+  ],
+  "edges": [
+    {
+      "from": "script:test_matrix.gd",
+      "to": "class:MNACircuit",
+      "type": "uses"
+    },
+    {
+      "from": "script:Scripts\\debug_inventory.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:Scripts\\debug_inventory.gd",
+      "to": "class:ItemInstance",
+      "type": "uses"
+    },
+    {
+      "from": "script:tests\\test_digital_logic.gd",
+      "to": "class:CircuitConnection",
+      "type": "uses"
+    },
+    {
+      "from": "script:tests\\test_mna_circuit.gd",
+      "to": "class:CircuitTransientSettings",
+      "type": "uses"
+    },
+    {
+      "from": "script:tests\\test_mna_circuit.gd",
+      "to": "class:MNACircuit",
+      "type": "uses"
+    },
+    {
+      "from": "script:tests\\test_transistor_components.gd",
+      "to": "class:CircuitJunction",
+      "type": "uses"
+    },
+    {
+      "from": "script:tests\\test_transistor_components.gd",
+      "to": "class:CircuitWire",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\spin_coater_ui.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\wafer_analyzer_ui.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd",
+      "to": "class:ElectricalNet",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "to": "class:ComponentData",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "to": "class:CircuitSimulationResult",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "to": "class:PropertyEditor",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "to": "class:ElectricalNet",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+      "to": "class:CircuitConnection",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+      "to": "class:CircuitJunction",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+      "to": "class:CircuitWire",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:CircuitSimulationResult",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:CircuitValidator",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:ElectricalNet",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:MNACircuit",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:PropertyEditor",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
+      "to": "class:CircuitTerminal",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
+      "to": "class:ComponentData",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:CircuitGraph",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:CircuitValidator",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:CircuitWire",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:HistoryManager",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:SchematicComponent",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:WireRouter",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "to": "class:CircuitConnection",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "to": "class:CircuitJunction",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "to": "class:CircuitWire",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "to": "class:WirePreview",
+      "type": "uses"
+    },
+    {
+      "from": "script:Machines\\Scenes\\silicon_purifier.gd",
+      "to": "class:Machine",
+      "type": "extends"
+    },
+    {
+      "from": "script:Machines\\Scenes\\silicon_purifier.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:Machines\\Scripts\\dust_collector.gd",
+      "to": "class:Tool",
+      "type": "extends"
+    },
+    {
+      "from": "script:Machines\\Scripts\\dust_collector.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:Machines\\Scripts\\silicon_growth_furnace.gd",
+      "to": "class:Machine",
+      "type": "extends"
+    },
+    {
+      "from": "script:Machines\\Scripts\\silicon_growth_furnace.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:Machines\\Scripts\\silicon_processor.gd",
+      "to": "class:Machine",
+      "type": "extends"
+    },
+    {
+      "from": "script:Machines\\Scripts\\silicon_processor.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:Machines\\Scripts\\spin_coater.gd",
+      "to": "class:Machine",
+      "type": "extends"
+    },
+    {
+      "from": "script:Machines\\Scripts\\spin_coater.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:Machines\\Scripts\\spin_coater.gd",
+      "to": "class:ItemInstance",
+      "type": "uses"
+    },
+    {
+      "from": "script:Machines\\Scripts\\wafer_analyzer.gd",
+      "to": "class:Machine",
+      "type": "extends"
+    },
+    {
+      "from": "script:Machines\\Scripts\\wafer_slicer.gd",
+      "to": "class:Machine",
+      "type": "extends"
+    },
+    {
+      "from": "script:Machines\\Scripts\\wafer_slicer.gd",
+      "to": "class:Inventory",
+      "type": "uses"
+    },
+    {
+      "from": "script:addons\\gd_mna_solver\\mna_circuit.gd",
+      "to": "class:MatrixMath",
+      "type": "uses"
+    },
+    {
+      "from": "class:Inventory",
+      "to": "script:Scripts\\inventory.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:ItemData",
+      "to": "script:Scripts\\item_data.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:ItemInstance",
+      "to": "script:Scripts\\item_instance.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:Machine",
+      "to": "script:Scripts\\machine.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:Tool",
+      "to": "script:Scripts\\Tool.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:InventorySlot",
+      "to": "script:UI\\inventory_slot.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:CircuitConnection",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:CircuitGraph",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:CircuitJunction",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_junction.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:ElectricalNet",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_net.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:CircuitSimulationResult",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_simulation_result.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:CircuitTransientSettings",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:CircuitValidator",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_validator.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:CircuitWire",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:ComponentData",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:ComponentRegistry",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:DigitalLogicSimulator",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:DigitalValidator",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:HistoryManager",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:NetLabel",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:PropertyEditor",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\property_editor.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:SchematicCanvas",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_canvas.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:SchematicComponent",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:SchematicEditor",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:SchematicVerificationResult",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:CircuitTerminal",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\terminal.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:TransientVoltagePlot",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\transient_voltage_plot.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:WirePreview",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_preview.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:WireRouter",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:DustCollector",
+      "to": "script:Machines\\Scripts\\dust_collector.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:WaferAnalyzer",
+      "to": "script:Machines\\Scripts\\wafer_analyzer.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:MatrixMath",
+      "to": "script:addons\\gd_mna_solver\\matrix_math.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:MNACircuit",
+      "to": "script:addons\\gd_mna_solver\\mna_circuit.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalDesigner",
+      "type": "contains"
+    },
+    {
+      "from": "node:digital_designer.tscn:DigitalDesigner",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:SchematicEditor",
+      "type": "contains"
+    },
+    {
+      "from": "node:digital_designer.tscn:SchematicEditor",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:SchematicCanvas",
+      "type": "contains"
+    },
+    {
+      "from": "node:digital_designer.tscn:SchematicCanvas",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_canvas.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:Toolbar",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:AddComponentButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:SimulateButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:VerifyDesignButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:ClearEditorButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:SaveSchematicButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:LoadSchematicButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:ResetViewButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:SchematicFileDialog",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:ComponentChooser",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:ScrollContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:VBoxContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:Label",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalNotButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalAnd2Button",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalOr2Button",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalXor2Button",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalXnor2Button",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalBufferButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalNand2Button",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalNor2Button",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalInputButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:DigitalOutputButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:VddButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:GroundButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:CancelButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:PanelContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:PropertiesPanel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:SimulationResultsPanel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:ContentContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:Header",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:Title",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:CloseButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:ScrollContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:digital_designer.tscn",
+      "to": "node:digital_designer.tscn:Content",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:Level1",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:WorldEnvironment",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DirectionalLight3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:Objects",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:Room",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch2",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch3",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch4",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch5",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch6",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch7",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch8",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch9",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch10",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch11",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:DustPatch12",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:character",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:Machines",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:SiliconProcessor",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:SiliconPurifier",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:silicon_growth_furnace",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:wafer_slicer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:SpinCoater",
+      "type": "contains"
+    },
+    {
+      "from": "scene:level_1.tscn",
+      "to": "node:level_1.tscn:WaferAnalyzer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:Room",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:Machines",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:Floor",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:StaticBody3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:Walls",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:Wall",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:Wall2",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:Wall3",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:Wall4",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Room.tscn",
+      "to": "node:Room.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:character",
+      "type": "contains"
+    },
+    {
+      "from": "node:Character\\character.tscn:character",
+      "to": "script:Character\\character.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:Camera3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:RayCast3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:ToolManager",
+      "type": "contains"
+    },
+    {
+      "from": "node:Character\\character.tscn:ToolManager",
+      "to": "script:Character\\tool_manager.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:DustCollector",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:CanvasLayer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:InteractionLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:InventoryUI",
+      "type": "contains"
+    },
+    {
+      "from": "node:Character\\character.tscn:InventoryUI",
+      "to": "script:Character\\inventory_ui.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:Panel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:ItemGrid",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:SpinCoaterUI",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:WaferAnalyzerUI",
+      "type": "contains"
+    },
+    {
+      "from": "node:Character\\character.tscn:WaferAnalyzerUI",
+      "to": "script:UI\\wafer_analyzer_ui.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:Panel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:VBoxContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:TitleLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:ResultsTitleLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:ThicknessLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:UniformityLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:DefectsLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:LoadButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:UnloadButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:CloseButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:Inventory",
+      "type": "contains"
+    },
+    {
+      "from": "node:Character\\character.tscn:Inventory",
+      "to": "script:Scripts\\inventory.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:Interaction",
+      "type": "contains"
+    },
+    {
+      "from": "node:Character\\character.tscn:Interaction",
+      "to": "script:Scripts\\player_interaction.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Character\\character.tscn",
+      "to": "node:Character\\character.tscn:DebugInventory",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:CircuitDesignerUI",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:Panel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:VBoxContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:TitleLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:ComponentsLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:AddComponentButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:CircuitArea",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:CircuitWorkspace",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:SelectedComponentLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:PropertiesPanel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:ClearButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\circuit_designer_ui.tscn",
+      "to": "node:UI\\Scenes\\circuit_designer_ui.tscn:CloseButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:DebugInventory",
+      "type": "contains"
+    },
+    {
+      "from": "node:UI\\Scenes\\debug_inventory.tscn:DebugInventory",
+      "to": "script:Scripts\\debug_inventory.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:Panel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:VBoxContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:Label",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:AddDustButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:AddRawSiliconButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:AddPureSiliconButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:AddWaferButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:ClearButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\debug_inventory.tscn",
+      "to": "node:UI\\Scenes\\debug_inventory.tscn:AddTestCoatedWaferButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\inventory_slot.tscn",
+      "to": "node:UI\\Scenes\\inventory_slot.tscn:InventorySlot",
+      "type": "contains"
+    },
+    {
+      "from": "node:UI\\Scenes\\inventory_slot.tscn:InventorySlot",
+      "to": "script:UI\\inventory_slot.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:UI\\Scenes\\inventory_slot.tscn",
+      "to": "node:UI\\Scenes\\inventory_slot.tscn:TextureRect",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\inventory_slot.tscn",
+      "to": "node:UI\\Scenes\\inventory_slot.tscn:Title",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\inventory_slot.tscn",
+      "to": "node:UI\\Scenes\\inventory_slot.tscn:Amount",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinCoaterUI",
+      "type": "contains"
+    },
+    {
+      "from": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinCoaterUI",
+      "to": "script:UI\\spin_coater_ui.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:Panel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:VBoxContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:Title",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:StatusLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:WaferLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:LoadWaferButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:ResistLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:ResistOption",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinSpeedLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinSpeedSlider",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinTimeLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:SpinTimeSlider",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:TemperatureLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:TemperatureSlider",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:CollectWaferButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:StartButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\spin_coater_ui.tscn",
+      "to": "node:UI\\Scenes\\spin_coater_ui.tscn:CloseButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Main",
+      "type": "contains"
+    },
+    {
+      "from": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Main",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SchematicEditor",
+      "type": "contains"
+    },
+    {
+      "from": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SchematicEditor",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SchematicCanvas",
+      "type": "contains"
+    },
+    {
+      "from": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SchematicCanvas",
+      "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_canvas.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Toolbar",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddComponentButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:PrintNetlistButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SimulateButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TestDividerButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ClearEditorButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:VerifyDesignButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SaveSchematicButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:LoadSchematicButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ResetViewButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddNetLabelButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientStepLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientStepSpinBox",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientDurationLabel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:TransientDurationSpinBox",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SchematicFileDialog",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ComponentChooser",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ScrollContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:VBoxContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Label",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ResistorButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddCapacitorButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddDiodeButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddNmosButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AddPmosButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:BatteryButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:VoltageSourceButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:AcVoltageSourceButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:GroundButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:VddButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:CancelButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:PanelContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:PropertiesPanel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:SimulationResultsPanel",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ContentContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Header",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Title",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:CloseButton",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:ScrollContainer",
+      "type": "contains"
+    },
+    {
+      "from": "scene:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "to": "node:UI\\Scenes\\Circuit Designer\\main.tscn:Content",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\dust_collector.tscn",
+      "to": "node:Machines\\Scenes\\dust_collector.tscn:DustCollector",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\dust_collector.tscn:DustCollector",
+      "to": "script:Machines\\Scripts\\dust_collector.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\dust_collector.tscn",
+      "to": "node:Machines\\Scenes\\dust_collector.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\dust_patch.tscn",
+      "to": "node:Machines\\Scenes\\dust_patch.tscn:DustPatch",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\dust_patch.tscn:DustPatch",
+      "to": "script:Machines\\Scripts\\dust_patch.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\dust_patch.tscn",
+      "to": "node:Machines\\Scenes\\dust_patch.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\dust_patch.tscn",
+      "to": "node:Machines\\Scenes\\dust_patch.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_growth_furnace.tscn",
+      "to": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:silicon_growth_furnace",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:silicon_growth_furnace",
+      "to": "script:Machines\\Scripts\\silicon_growth_furnace.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_growth_furnace.tscn",
+      "to": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_growth_furnace.tscn",
+      "to": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_growth_furnace.tscn",
+      "to": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:Inventory",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:Inventory",
+      "to": "script:Scripts\\inventory.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_growth_furnace.tscn",
+      "to": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:Title",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_growth_furnace.tscn",
+      "to": "node:Machines\\Scenes\\silicon_growth_furnace.tscn:ItemCount",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_processor.tscn",
+      "to": "node:Machines\\Scenes\\silicon_processor.tscn:SiliconProcessor",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\silicon_processor.tscn:SiliconProcessor",
+      "to": "script:Machines\\Scripts\\silicon_processor.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_processor.tscn",
+      "to": "node:Machines\\Scenes\\silicon_processor.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_processor.tscn",
+      "to": "node:Machines\\Scenes\\silicon_processor.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_processor.tscn",
+      "to": "node:Machines\\Scenes\\silicon_processor.tscn:Title",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_processor.tscn",
+      "to": "node:Machines\\Scenes\\silicon_processor.tscn:ItemCount",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_processor.tscn",
+      "to": "node:Machines\\Scenes\\silicon_processor.tscn:Inventory",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\silicon_processor.tscn:Inventory",
+      "to": "script:Scripts\\inventory.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_purifier.tscn",
+      "to": "node:Machines\\Scenes\\silicon_purifier.tscn:SiliconPurifier",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\silicon_purifier.tscn:SiliconPurifier",
+      "to": "script:Machines\\Scenes\\silicon_purifier.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_purifier.tscn",
+      "to": "node:Machines\\Scenes\\silicon_purifier.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_purifier.tscn",
+      "to": "node:Machines\\Scenes\\silicon_purifier.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_purifier.tscn",
+      "to": "node:Machines\\Scenes\\silicon_purifier.tscn:Inventory",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\silicon_purifier.tscn:Inventory",
+      "to": "script:Scripts\\inventory.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_purifier.tscn",
+      "to": "node:Machines\\Scenes\\silicon_purifier.tscn:ItemCount",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\silicon_purifier.tscn",
+      "to": "node:Machines\\Scenes\\silicon_purifier.tscn:Title",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\spin_coater.tscn",
+      "to": "node:Machines\\Scenes\\spin_coater.tscn:SpinCoater",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\spin_coater.tscn:SpinCoater",
+      "to": "script:Machines\\Scripts\\spin_coater.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\spin_coater.tscn",
+      "to": "node:Machines\\Scenes\\spin_coater.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\spin_coater.tscn",
+      "to": "node:Machines\\Scenes\\spin_coater.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\spin_coater.tscn",
+      "to": "node:Machines\\Scenes\\spin_coater.tscn:Inventory",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\spin_coater.tscn:Inventory",
+      "to": "script:Scripts\\inventory.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_analyzer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_analyzer.tscn:WaferAnalyzer",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\wafer_analyzer.tscn:WaferAnalyzer",
+      "to": "script:Machines\\Scripts\\wafer_analyzer.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_analyzer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_analyzer.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_analyzer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_analyzer.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_analyzer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_analyzer.tscn:Inventory",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\wafer_analyzer.tscn:Inventory",
+      "to": "script:Scripts\\inventory.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_slicer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_slicer.tscn:wafer_slicer",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\wafer_slicer.tscn:wafer_slicer",
+      "to": "script:Machines\\Scripts\\wafer_slicer.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_slicer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_slicer.tscn:MeshInstance3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_slicer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_slicer.tscn:CollisionShape3D",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_slicer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_slicer.tscn:Inventory",
+      "type": "contains"
+    },
+    {
+      "from": "node:Machines\\Scenes\\wafer_slicer.tscn:Inventory",
+      "to": "script:Scripts\\inventory.gd",
+      "type": "attaches"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_slicer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_slicer.tscn:Title",
+      "type": "contains"
+    },
+    {
+      "from": "scene:Machines\\Scenes\\wafer_slicer.tscn",
+      "to": "node:Machines\\Scenes\\wafer_slicer.tscn:ItemCount",
+      "type": "contains"
+    }
+  ]
+}

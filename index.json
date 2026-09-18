@@ -1,0 +1,1591 @@
+{
+    "project": "silicon_frontier",
+    "scripts": [
+        {
+            "file": "test_matrix.gd",
+            "class": null,
+            "extends": "EditorScript",
+            "signals": [],
+            "functions": [
+                "_run"
+            ],
+            "preloads": [],
+            "class_references": [
+                "MNACircuit"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "MNACircuit",
+                    "file": "addons\\gd_mna_solver\\mna_circuit.gd"
+                }
+            ]
+        },
+        {
+            "file": "Character\\character.gd",
+            "class": null,
+            "extends": "CharacterBody3D",
+            "signals": [],
+            "functions": [
+                "disable_player_input",
+                "enable_player_input",
+                "_ready",
+                "_input",
+                "_physics_process",
+                "handle_movement",
+                "open_ui",
+                "close_ui"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Input",
+                "Vector3"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "Character\\inventory_ui.gd",
+            "class": null,
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "_input",
+                "open",
+                "close",
+                "update_display",
+                "create_slot",
+                "clear_slots"
+            ],
+            "preloads": [
+                "res://ui/Scenes/inventory_slot.tscn"
+            ],
+            "class_references": [
+                "INVENTORY_SLOT"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "Character\\tool_manager.gd",
+            "class": null,
+            "extends": "Node3D",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "equip_tool",
+                "use_current_tool"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "Scripts\\debug_inventory.gd",
+            "class": null,
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "_input",
+                "open",
+                "close",
+                "add_dust",
+                "add_raw_silicon",
+                "add_pure_silicon",
+                "add_wafer",
+                "add_test_coated_wafer",
+                "clear_inventory"
+            ],
+            "preloads": [],
+            "class_references": [
+                "AddDustButton",
+                "AddPureSiliconButton",
+                "AddRawSiliconButton",
+                "AddTestCoatedWaferButton",
+                "AddWaferButton",
+                "ClearButton",
+                "Inventory",
+                "ItemInstance",
+                "UI"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "ItemInstance",
+                    "file": "Scripts\\item_instance.gd"
+                }
+            ]
+        },
+        {
+            "file": "Scripts\\inventory.gd",
+            "class": "Inventory",
+            "extends": "Node",
+            "signals": [
+                "inventory_changed"
+            ],
+            "functions": [
+                "add_instance",
+                "remove_instance",
+                "get_instances",
+                "add_item",
+                "remove_item",
+                "has_item",
+                "get_amount"
+            ],
+            "preloads": [
+                "res://data/items/dust.tres",
+                "res://data/items/raw_silicon.tres",
+                "res://data/items/pure_silicon.tres",
+                "res://data/items/silicon_ingot.tres",
+                "res://data/items/wafer.tres",
+                "res://data/items/positive_photoresist.tres",
+                "res://data/items/negative_photoresist.tres",
+                "res://data/items/coated_wafer.tres"
+            ],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "Scripts\\item_data.gd",
+            "class": "ItemData",
+            "extends": "Resource",
+            "signals": [],
+            "functions": [],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "Scripts\\item_instance.gd",
+            "class": "ItemInstance",
+            "extends": "Resource",
+            "signals": [],
+            "functions": [
+                "get_property",
+                "set_property",
+                "add_process_step",
+                "get_process_history"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "Scripts\\machine.gd",
+            "class": "Machine",
+            "extends": "StaticBody3D",
+            "signals": [],
+            "functions": [
+                "_process",
+                "start_processing",
+                "finish_processing",
+                "get_player",
+                "get_player_inventory",
+                "load_item_from_player",
+                "load_one_item_from_player",
+                "collect_item_to_player"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "Scripts\\player_interaction.gd",
+            "class": null,
+            "extends": "Node",
+            "signals": [],
+            "functions": [
+                "disable_interaction",
+                "enable_interaction",
+                "_process",
+                "_physics_process",
+                "check_interaction",
+                "check_tool_use"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Input"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "Scripts\\Tool.gd",
+            "class": "Tool",
+            "extends": "Node3D",
+            "signals": [],
+            "functions": [
+                "use"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "tests\\test_digital_logic.gd",
+            "class": null,
+            "extends": "SceneTree",
+            "signals": [],
+            "functions": [
+                "_initialize",
+                "_gate_result",
+                "_connect",
+                "_has_error_code"
+            ],
+            "preloads": [
+                "res://UI/Scenes/Circuit Designer/main.tscn",
+                "res://UI/Scenes/Circuit Designer/Scripts/digital_logic_simulator.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/digital_validator.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/component_registry.gd"
+            ],
+            "class_references": [
+                "COMPONENT_REGISTRY_SCRIPT",
+                "CircuitConnection",
+                "DIGITAL_LOGIC_SIMULATOR_SCRIPT",
+                "DIGITAL_VALIDATOR_SCRIPT",
+                "MAIN_SCENE",
+                "String",
+                "Vector2"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitConnection",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd"
+                }
+            ]
+        },
+        {
+            "file": "tests\\test_mna_circuit.gd",
+            "class": null,
+            "extends": "SceneTree",
+            "signals": [],
+            "functions": [
+                "_initialize",
+                "_test_dc_voltage_divider",
+                "_test_rc_transient_response",
+                "_test_invalid_transient_settings",
+                "_test_ac_rc_transient_response",
+                "_test_ac_capacitor_current",
+                "_test_ac_voltage_source",
+                "_test_nmos_cutoff",
+                "_test_pmos_polarity",
+                "_test_diode_forward_bias",
+                "_test_diode_reverse_bias",
+                "_test_diode_transient",
+                "_expect_near",
+                "_expect_equal",
+                "_expect_true"
+            ],
+            "preloads": [],
+            "class_references": [
+                "CircuitTransientSettings",
+                "MNACircuit"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitTransientSettings",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "MNACircuit",
+                    "file": "addons\\gd_mna_solver\\mna_circuit.gd"
+                }
+            ]
+        },
+        {
+            "file": "tests\\test_transistor_components.gd",
+            "class": null,
+            "extends": "SceneTree",
+            "signals": [],
+            "functions": [
+                "_initialize",
+                "_check_transistor",
+                "_check_netlist_pins",
+                "_check_diode",
+                "_has_validation_code",
+                "_find_validation_error"
+            ],
+            "preloads": [
+                "res://UI/Scenes/Circuit Designer/main.tscn"
+            ],
+            "class_references": [
+                "CircuitJunction",
+                "CircuitWire",
+                "ID",
+                "K",
+                "MAIN_SCENE",
+                "PackedVector2Array",
+                "Rect2",
+                "S",
+                "V",
+                "VDD",
+                "Vector2",
+                "Voltage"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitJunction",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_junction.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "CircuitWire",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\inventory_slot.gd",
+            "class": "InventorySlot",
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "setup"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "UI\\spin_coater_ui.gd",
+            "class": null,
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "setup_resist_options",
+                "get_selected_resist",
+                "update_display",
+                "load_wafer",
+                "update_controls",
+                "_on_spin_speed_changed",
+                "_on_spin_time_changed",
+                "_on_temperature_changed",
+                "start_coating",
+                "coating_finished",
+                "collect_wafer",
+                "open",
+                "close"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Coating",
+                "Inventory"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\wafer_analyzer_ui.gd",
+            "class": null,
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "update_display",
+                "open",
+                "close",
+                "load_wafer",
+                "unload_wafer"
+            ],
+            "preloads": [],
+            "class_references": [
+                "CloseButton",
+                "Inventory",
+                "LoadButton",
+                "UnloadButton"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd",
+            "class": "CircuitConnection",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "_init",
+                "contains_terminal",
+                "connects"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd",
+            "class": "CircuitGraph",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "set_net_identity",
+                "extract_netlist",
+                "_build_net_metadata",
+                "_find_root",
+                "_union_terminals"
+            ],
+            "preloads": [],
+            "class_references": [
+                "ElectricalNet",
+                "String"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "ElectricalNet",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_net.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_junction.gd",
+            "class": "CircuitJunction",
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "add_terminal",
+                "_mouse_entered",
+                "_mouse_exited",
+                "_draw",
+                "_gui_input"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Color",
+                "Control",
+                "Vector2"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_net.gd",
+            "class": "ElectricalNet",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "_init",
+                "to_dictionary"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_simulation_result.gd",
+            "class": "CircuitSimulationResult",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "to_dictionary"
+            ],
+            "preloads": [],
+            "class_references": [
+                "PackedFloat64Array"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd",
+            "class": "CircuitTransientSettings",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "validate",
+                "get_step_count"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_validator.gd",
+            "class": "CircuitValidator",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "validate",
+                "_enrich_diagnostics",
+                "_add_invalid_value_error",
+                "_add_invalid_frequency_error",
+                "_make_error",
+                "_is_terminal_connected",
+                "_build_nets",
+                "_validate_two_terminal_component",
+                "_validate_three_terminal_component",
+                "_validate_battery",
+                "_validate_ground",
+                "_are_on_same_net",
+                "_find_root",
+                "_union_terminals"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd",
+            "class": "CircuitWire",
+            "extends": "Line2D",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "_process",
+                "set_selected"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Color"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd",
+            "class": "ComponentData",
+            "extends": "Resource",
+            "signals": [],
+            "functions": [],
+            "preloads": [],
+            "class_references": [
+                "Vector2"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+            "class": "ComponentRegistry",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [],
+            "preloads": [
+                "res://UI/Scenes/Circuit Designer/Scripts/component_data.gd"
+            ],
+            "class_references": [
+                "COMPONENT_DATA_SCRIPT",
+                "ComponentData",
+                "PinSide",
+                "Vector2"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "ComponentData",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+            "class": null,
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "_apply_component_registry_labels",
+                "_add_component",
+                "_select_component",
+                "_clear_properties_panel",
+                "_clear_properties_panel_contents",
+                "_on_simulate_pressed",
+                "_on_verify_design_pressed",
+                "_show_simulation_results",
+                "_on_clear_editor_pressed",
+                "_on_save_schematic_pressed",
+                "_on_load_schematic_pressed",
+                "_on_schematic_file_selected",
+                "_mark_simulation_stale"
+            ],
+            "preloads": [
+                "res://UI/Scenes/Circuit Designer/Scripts/digital_validator.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/digital_logic_simulator.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/component_registry.gd"
+            ],
+            "class_references": [
+                "AddComponentButton",
+                "COMPONENT_REGISTRY_SCRIPT",
+                "CancelButton",
+                "CircuitSimulationResult",
+                "ClearEditorButton",
+                "DIGITAL_LOGIC_SIMULATOR_SCRIPT",
+                "DIGITAL_VALIDATOR_SCRIPT",
+                "DigitalAnd2Button",
+                "DigitalBufferButton",
+                "DigitalInputButton",
+                "DigitalNand2Button",
+                "DigitalNor2Button",
+                "DigitalNotButton",
+                "DigitalOr2Button",
+                "DigitalOutputButton",
+                "DigitalXnor2Button",
+                "DigitalXor2Button",
+                "FileDialog",
+                "GroundButton",
+                "Label",
+                "LoadSchematicButton",
+                "PropertyEditor",
+                "ResetViewButton",
+                "SaveSchematicButton",
+                "SchematicFileDialog",
+                "SimulateButton",
+                "VddButton",
+                "Vector2",
+                "VerifyDesignButton"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitSimulationResult",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_simulation_result.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "PropertyEditor",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\property_editor.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+            "class": "DigitalLogicSimulator",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "simulate",
+                "_resolve_drivers",
+                "_evaluate_gate",
+                "_definition",
+                "_pin_with_role",
+                "_pins_with_role"
+            ],
+            "preloads": [
+                "res://UI/Scenes/Circuit Designer/Scripts/component_registry.gd"
+            ],
+            "class_references": [
+                "COMPONENT_REGISTRY_SCRIPT",
+                "String"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+            "class": "DigitalValidator",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "validate",
+                "_definition",
+                "_is_required_pin",
+                "_is_output_pin",
+                "_error",
+                "_power_error"
+            ],
+            "preloads": [
+                "res://UI/Scenes/Circuit Designer/Scripts/component_registry.gd"
+            ],
+            "class_references": [
+                "COMPONENT_REGISTRY_SCRIPT",
+                "ElectricalNet",
+                "String"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "ElectricalNet",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_net.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+            "class": "HistoryManager",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "_init",
+                "capture_state",
+                "clear",
+                "record_state",
+                "undo",
+                "redo",
+                "restore_state",
+                "_find_terminal",
+                "begin_property_edit",
+                "end_property_edit"
+            ],
+            "preloads": [],
+            "class_references": [
+                "CircuitConnection",
+                "CircuitJunction",
+                "CircuitWire",
+                "String",
+                "Vector2"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitConnection",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "CircuitJunction",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_junction.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "CircuitWire",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+            "class": null,
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "_setup_transient_controls",
+                "_clear_properties_panel",
+                "_on_add_component_pressed",
+                "_on_add_test_divider_pressed",
+                "_on_clear_editor_pressed",
+                "_on_verify_design_pressed",
+                "_on_save_schematic_pressed",
+                "_on_load_schematic_pressed",
+                "_on_reset_view_pressed",
+                "_on_schematic_file_selected",
+                "_add_component",
+                "_select_component",
+                "_close_component_chooser",
+                "_print_netlist",
+                "_on_simulate_pressed",
+                "_contains_digital_components",
+                "_run_digital_simulation",
+                "_on_transient_pressed",
+                "_simulate_transient",
+                "_build_transient_component_summaries",
+                "_get_ac_sampling_warning",
+                "_run_simulation",
+                "_show_simulation_results",
+                "_add_transient_plot",
+                "_add_net_result_row",
+                "_highlight_net",
+                "_clear_net_highlight",
+                "_highlight_validation_error",
+                "_clear_validation_highlight",
+                "_add_results_section",
+                "_close_simulation_results",
+                "_mark_simulation_stale",
+                "_add_selected_component_details",
+                "_build_mosfet_result",
+                "_build_diode_result",
+                "_diode_current",
+                "build_properties_panel",
+                "create_float_property",
+                "clear_properties_panel",
+                "_validate_circuit",
+                "_simulate_circuit"
+            ],
+            "preloads": [
+                "res://UI/Scenes/Circuit Designer/Scripts/circuit_transient_settings.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/transient_voltage_plot.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/digital_logic_simulator.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/digital_validator.gd"
+            ],
+            "class_references": [
+                "Button",
+                "CheckButton",
+                "CircuitSimulationResult",
+                "CircuitValidator",
+                "Color",
+                "Control",
+                "DIGITAL_LOGIC_SIMULATOR_SCRIPT",
+                "DIGITAL_VALIDATOR_SCRIPT",
+                "ElectricalNet",
+                "FileDialog",
+                "HBoxContainer",
+                "IDs",
+                "Label",
+                "LineEdit",
+                "MNACircuit",
+                "Nets",
+                "OptionButton",
+                "PropertyEditor",
+                "String",
+                "TRANSIENT_PLOT_SCRIPT",
+                "TRANSIENT_SETTINGS_SCRIPT",
+                "TextServer",
+                "VBoxContainer",
+                "Vector2"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitSimulationResult",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_simulation_result.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "CircuitValidator",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_validator.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "ElectricalNet",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_net.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "MNACircuit",
+                    "file": "addons\\gd_mna_solver\\mna_circuit.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "PropertyEditor",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\property_editor.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd",
+            "class": "NetLabel",
+            "extends": "Control",
+            "signals": [
+                "selected",
+                "move_started",
+                "move_finished",
+                "rotated"
+            ],
+            "functions": [
+                "setup",
+                "_draw",
+                "_on_gui_input",
+                "set_selected",
+                "rotate_clockwise"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Color",
+                "Control",
+                "ThemeDB",
+                "Vector2"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\property_editor.gd",
+            "class": "PropertyEditor",
+            "extends": "HBoxContainer",
+            "signals": [
+                "edit_started",
+                "value_changed",
+                "edit_finished",
+                "undo_requested",
+                "redo_requested"
+            ],
+            "functions": [
+                "setup",
+                "_on_spinbox_value_changed",
+                "_on_focus_exited",
+                "_on_text_submitted",
+                "_on_line_edit_gui_input",
+                "_finish_edit"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Control",
+                "Label",
+                "SpinBox",
+                "Y"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_canvas.gd",
+            "class": "SchematicCanvas",
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "reset_view",
+                "_gui_input",
+                "_zoom_at_mouse",
+                "_draw",
+                "get_snapped_position"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Color",
+                "Control",
+                "Vector2"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
+            "class": "SchematicComponent",
+            "extends": "Control",
+            "signals": [
+                "move_started",
+                "move_finished",
+                "rotated",
+                "selected",
+                "value_changed",
+                "right_clicked"
+            ],
+            "functions": [
+                "_ready",
+                "initialize",
+                "_create_hit_area",
+                "_on_hit_area_input",
+                "_draw",
+                "_make_selection_box",
+                "_make_digital_gate_box",
+                "_draw_digital_terminals",
+                "_make_net_highlight_box",
+                "_make_validation_box",
+                "_get_selection_rect",
+                "get_properties",
+                "set_property",
+                "create_terminal",
+                "_create_terminals",
+                "_on_gui_input",
+                "set_selected",
+                "rotate_clockwise"
+            ],
+            "preloads": [],
+            "class_references": [
+                "CircuitTerminal",
+                "Color",
+                "ComponentData",
+                "Control",
+                "PackedVector2Array",
+                "PinSide",
+                "Rect2",
+                "StyleBoxFlat",
+                "ThemeDB",
+                "Vector2"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitTerminal",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\terminal.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "ComponentData",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+            "class": "SchematicEditor",
+            "extends": "Control",
+            "signals": [
+                "component_selected",
+                "selection_cleared",
+                "canvas_clicked",
+                "schematic_changed"
+            ],
+            "functions": [
+                "_ready",
+                "add_component",
+                "add_voltage_divider_test_circuit",
+                "add_ac_capacitor_test_circuit",
+                "add_rc_low_pass_test_circuit",
+                "add_rc_high_pass_test_circuit",
+                "add_capacitor_charging_test_circuit",
+                "_create_test_circuit",
+                "clear_editor",
+                "prompt_add_net_label",
+                "_on_net_label_confirmed",
+                "add_net_label",
+                "_on_net_label_selected",
+                "_deselect_net_label",
+                "_on_net_label_move_started",
+                "_on_net_label_move_finished",
+                "_on_net_label_rotated",
+                "_update_net_label_state",
+                "_remove_net_label",
+                "_find_net_label_node",
+                "_close_net_label_dialog",
+                "verify_schematic",
+                "_contains_digital_components",
+                "save_schematic",
+                "load_schematic",
+                "_emit_schematic_changed",
+                "_encode_document_value",
+                "_decode_document_value",
+                "_add_test_wire",
+                "_terminal_canvas_position",
+                "_gui_input",
+                "_on_component_right_clicked",
+                "_remove_component",
+                "_on_component_selected",
+                "_clear_multi_selection",
+                "_select_box",
+                "_update_box_select_rect",
+                "deselect_component",
+                "_on_component_move_started",
+                "_on_component_move_finished",
+                "_process_group_drag",
+                "_on_component_value_changed",
+                "_shortcut_input",
+                "_process",
+                "_on_component_rotated",
+                "_get_canvas_center",
+                "_snap_to_grid",
+                "_select_wire",
+                "_start_wire_drag",
+                "_find_wire_drag_segment",
+                "_update_wire_drag",
+                "_deselect_wire"
+            ],
+            "preloads": [
+                "res://UI/Scenes/Circuit Designer/Scripts/schematic_verification_result.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/net_label.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/digital_validator.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/component_registry.gd"
+            ],
+            "class_references": [
+                "AcceptDialog",
+                "BIAS",
+                "COMPONENT_REGISTRY_SCRIPT",
+                "CircuitGraph",
+                "CircuitValidator",
+                "CircuitWire",
+                "Color",
+                "ColorRect",
+                "Control",
+                "DIGITAL_VALIDATOR_SCRIPT",
+                "FIRST",
+                "FileAccess",
+                "Geometry2D",
+                "HistoryManager",
+                "JSON",
+                "LineEdit",
+                "NET_LABEL_SCRIPT",
+                "PackedVector2Array",
+                "Rect2",
+                "SCHEMATIC_VERIFICATION_RESULT_SCRIPT",
+                "SchematicComponent",
+                "String",
+                "Vector2",
+                "WireRouter"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitGraph",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "CircuitValidator",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_validator.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "CircuitWire",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "HistoryManager",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "SchematicComponent",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "WireRouter",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd"
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd",
+            "class": "SchematicVerificationResult",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "to_dictionary"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\terminal.gd",
+            "class": "CircuitTerminal",
+            "extends": "Control",
+            "signals": [
+                "clicked"
+            ],
+            "functions": [
+                "_ready",
+                "_mouse_entered",
+                "_mouse_exited",
+                "_draw",
+                "get_connection_position",
+                "_gui_input"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Color",
+                "Control",
+                "Rect2",
+                "Vector2"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\transient_voltage_plot.gd",
+            "class": "TransientVoltagePlot",
+            "extends": "Control",
+            "signals": [],
+            "functions": [
+                "set_data",
+                "set_ylabel",
+                "_gui_input",
+                "_notification",
+                "_get_plot_rect",
+                "_draw",
+                "_format_engineering"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Color",
+                "Control",
+                "PackedFloat64Array",
+                "PackedVector2Array",
+                "Rect2",
+                "String",
+                "ThemeDB",
+                "Vector2"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_preview.gd",
+            "class": "WirePreview",
+            "extends": "Node2D",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "set_points",
+                "_draw"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Color",
+                "PackedVector2Array"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+            "class": "WireRouter",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "_init",
+                "cancel_preview",
+                "update_preview",
+                "_on_terminal_clicked",
+                "_connection_exists",
+                "_add_wire_corner",
+                "place_intermediate_junction",
+                "_finish_wire_at_terminal",
+                "_finish_wire_at_junction",
+                "_find_junction_at_position",
+                "_closest_point_on_wire",
+                "_split_wire",
+                "_distance_to_wire",
+                "_cleanup_junctions",
+                "_remove_wire",
+                "_find_wire_near_position",
+                "_distance_to_segment",
+                "_rebuild_logical_connections",
+                "_get_terminals_connected_to_junction",
+                "start_preview_from_junction",
+                "_finish_wire_at_existing_junction",
+                "_remove_junction",
+                "update_wires_for_component",
+                "_terminal_to_canvas_position"
+            ],
+            "preloads": [],
+            "class_references": [
+                "CircuitConnection",
+                "CircuitJunction",
+                "CircuitWire",
+                "PackedVector2Array",
+                "Vector2",
+                "WirePreview"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "CircuitConnection",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "CircuitJunction",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_junction.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "CircuitWire",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "WirePreview",
+                    "file": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_preview.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\silicon_purifier.gd",
+            "class": null,
+            "extends": "Machine",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "get_interaction_text",
+                "update_item_count",
+                "interact",
+                "finish_processing"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Inventory",
+                "Processing"
+            ],
+            "relationships": [
+                {
+                    "type": "extends",
+                    "class": "Machine",
+                    "file": "Scripts\\machine.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scripts\\dust_collector.gd",
+            "class": "DustCollector",
+            "extends": "Tool",
+            "signals": [],
+            "functions": [
+                "use"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Inventory"
+            ],
+            "relationships": [
+                {
+                    "type": "extends",
+                    "class": "Tool",
+                    "file": "Scripts\\Tool.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scripts\\dust_patch.gd",
+            "class": null,
+            "extends": "StaticBody3D",
+            "signals": [],
+            "functions": [
+                "collect_dust"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        },
+        {
+            "file": "Machines\\Scripts\\silicon_growth_furnace.gd",
+            "class": null,
+            "extends": "Machine",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "update_item_count",
+                "get_interaction_text",
+                "interact",
+                "finish_processing"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Inventory",
+                "Processing"
+            ],
+            "relationships": [
+                {
+                    "type": "extends",
+                    "class": "Machine",
+                    "file": "Scripts\\machine.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scripts\\silicon_processor.gd",
+            "class": null,
+            "extends": "Machine",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "get_interaction_text",
+                "update_item_count",
+                "interact",
+                "finish_processing"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Inventory",
+                "Processing"
+            ],
+            "relationships": [
+                {
+                    "type": "extends",
+                    "class": "Machine",
+                    "file": "Scripts\\machine.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scripts\\spin_coater.gd",
+            "class": null,
+            "extends": "Machine",
+            "signals": [],
+            "functions": [
+                "get_interaction_text",
+                "interact",
+                "start_coating",
+                "finish_processing",
+                "calculate_coating_result"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Inventory",
+                "ItemInstance"
+            ],
+            "relationships": [
+                {
+                    "type": "extends",
+                    "class": "Machine",
+                    "file": "Scripts\\machine.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "ItemInstance",
+                    "file": "Scripts\\item_instance.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scripts\\wafer_analyzer.gd",
+            "class": "WaferAnalyzer",
+            "extends": "Machine",
+            "signals": [],
+            "functions": [
+                "get_interaction_text",
+                "interact"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": [
+                {
+                    "type": "extends",
+                    "class": "Machine",
+                    "file": "Scripts\\machine.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scripts\\wafer_slicer.gd",
+            "class": null,
+            "extends": "Machine",
+            "signals": [],
+            "functions": [
+                "_ready",
+                "update_item_count",
+                "get_interaction_text",
+                "interact",
+                "finish_processing"
+            ],
+            "preloads": [],
+            "class_references": [
+                "Inventory",
+                "Processing"
+            ],
+            "relationships": [
+                {
+                    "type": "extends",
+                    "class": "Machine",
+                    "file": "Scripts\\machine.gd"
+                },
+                {
+                    "type": "uses",
+                    "class": "Inventory",
+                    "file": "Scripts\\inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "addons\\gd_mna_solver\\matrix_math.gd",
+            "class": "MatrixMath",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [],
+            "preloads": [],
+            "class_references": [
+                "A_input",
+                "B_input",
+                "PackedFloat64Array"
+            ],
+            "relationships": []
+        },
+        {
+            "file": "addons\\gd_mna_solver\\mna_circuit.gd",
+            "class": "MNACircuit",
+            "extends": "RefCounted",
+            "signals": [],
+            "functions": [
+                "set_node_metadata",
+                "add_resistor",
+                "add_voltage_source",
+                "add_ac_voltage_source",
+                "add_capacitor",
+                "add_diode",
+                "add_transistor",
+                "solve",
+                "_solve_nonlinear",
+                "_stamp_diode",
+                "_stamp_linear_elements",
+                "_stamp_transistor",
+                "_stamp_two_terminal_linearized",
+                "_stamp_controlled_current",
+                "_stamp_matrix_conductance",
+                "solve_transient",
+                "_solve_transient_step",
+                "_build_results_from_transient_data",
+                "_build_results"
+            ],
+            "preloads": [],
+            "class_references": [
+                "A",
+                "B",
+                "Failed",
+                "MatrixMath",
+                "PackedFloat64Array",
+                "Resistors",
+                "Sources"
+            ],
+            "relationships": [
+                {
+                    "type": "uses",
+                    "class": "MatrixMath",
+                    "file": "addons\\gd_mna_solver\\matrix_math.gd"
+                }
+            ]
+        },
+        {
+            "file": "addons\\gd_mna_solver\\plugin.gd",
+            "class": null,
+            "extends": "EditorPlugin",
+            "signals": [],
+            "functions": [
+                "_enter_tree",
+                "_exit_tree"
+            ],
+            "preloads": [],
+            "class_references": [],
+            "relationships": []
+        }
+    ],
+    "class_to_file": {
+        "Inventory": "Scripts\\inventory.gd",
+        "ItemData": "Scripts\\item_data.gd",
+        "ItemInstance": "Scripts\\item_instance.gd",
+        "Machine": "Scripts\\machine.gd",
+        "Tool": "Scripts\\Tool.gd",
+        "InventorySlot": "UI\\inventory_slot.gd",
+        "CircuitConnection": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd",
+        "CircuitGraph": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd",
+        "CircuitJunction": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_junction.gd",
+        "ElectricalNet": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_net.gd",
+        "CircuitSimulationResult": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_simulation_result.gd",
+        "CircuitTransientSettings": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd",
+        "CircuitValidator": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_validator.gd",
+        "CircuitWire": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_wire.gd",
+        "ComponentData": "UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd",
+        "ComponentRegistry": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+        "DigitalLogicSimulator": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+        "DigitalValidator": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+        "HistoryManager": "UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+        "NetLabel": "UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd",
+        "PropertyEditor": "UI\\Scenes\\Circuit Designer\\Scripts\\property_editor.gd",
+        "SchematicCanvas": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_canvas.gd",
+        "SchematicComponent": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
+        "SchematicEditor": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+        "SchematicVerificationResult": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd",
+        "CircuitTerminal": "UI\\Scenes\\Circuit Designer\\Scripts\\terminal.gd",
+        "TransientVoltagePlot": "UI\\Scenes\\Circuit Designer\\Scripts\\transient_voltage_plot.gd",
+        "WirePreview": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_preview.gd",
+        "WireRouter": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+        "DustCollector": "Machines\\Scripts\\dust_collector.gd",
+        "WaferAnalyzer": "Machines\\Scripts\\wafer_analyzer.gd",
+        "MatrixMath": "addons\\gd_mna_solver\\matrix_math.gd",
+        "MNACircuit": "addons\\gd_mna_solver\\mna_circuit.gd"
+    }
+}

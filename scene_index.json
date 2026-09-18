@@ -1,0 +1,1562 @@
+{
+    "project": "silicon_frontier",
+    "scenes": [
+        {
+            "file": "digital_designer.tscn",
+            "resources": [
+                "res://UI/Scenes/Circuit Designer/Scripts/schematic_editor.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/schematic_canvas.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/digital_designer.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "DigitalDesigner",
+                    "type": "Control",
+                    "parent": null,
+                    "script": "res://UI/Scenes/Circuit Designer/Scripts/digital_designer.gd"
+                },
+                {
+                    "name": "SchematicEditor",
+                    "type": "Control",
+                    "parent": ".",
+                    "script": "res://UI/Scenes/Circuit Designer/Scripts/schematic_editor.gd"
+                },
+                {
+                    "name": "SchematicCanvas",
+                    "type": "Control",
+                    "parent": "SchematicEditor",
+                    "script": "res://UI/Scenes/Circuit Designer/Scripts/schematic_canvas.gd"
+                },
+                {
+                    "name": "Toolbar",
+                    "type": "HBoxContainer",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "AddComponentButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "SimulateButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "VerifyDesignButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "ClearEditorButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "SaveSchematicButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "LoadSchematicButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "ResetViewButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "SchematicFileDialog",
+                    "type": "FileDialog",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ComponentChooser",
+                    "type": "Window",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ScrollContainer",
+                    "type": "ScrollContainer",
+                    "parent": "ComponentChooser",
+                    "script": null
+                },
+                {
+                    "name": "VBoxContainer",
+                    "type": "VBoxContainer",
+                    "parent": "ComponentChooser/ScrollContainer",
+                    "script": null
+                },
+                {
+                    "name": "Label",
+                    "type": "Label",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalNotButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalAnd2Button",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalOr2Button",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalXor2Button",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalXnor2Button",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalBufferButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalNand2Button",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalNor2Button",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalInputButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DigitalOutputButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "VddButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "GroundButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "CancelButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "PanelContainer",
+                    "type": "PanelContainer",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "PropertiesPanel",
+                    "type": "VBoxContainer",
+                    "parent": "PanelContainer",
+                    "script": null
+                },
+                {
+                    "name": "SimulationResultsPanel",
+                    "type": "PanelContainer",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ContentContainer",
+                    "type": "VBoxContainer",
+                    "parent": "SimulationResultsPanel",
+                    "script": null
+                },
+                {
+                    "name": "Header",
+                    "type": "HBoxContainer",
+                    "parent": "SimulationResultsPanel/ContentContainer",
+                    "script": null
+                },
+                {
+                    "name": "Title",
+                    "type": "Label",
+                    "parent": "SimulationResultsPanel/ContentContainer/Header",
+                    "script": null
+                },
+                {
+                    "name": "CloseButton",
+                    "type": "Button",
+                    "parent": "SimulationResultsPanel/ContentContainer/Header",
+                    "script": null
+                },
+                {
+                    "name": "ScrollContainer",
+                    "type": "ScrollContainer",
+                    "parent": "SimulationResultsPanel/ContentContainer",
+                    "script": null
+                },
+                {
+                    "name": "Content",
+                    "type": "VBoxContainer",
+                    "parent": "SimulationResultsPanel/ContentContainer/ScrollContainer",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "level_1.tscn",
+            "resources": [
+                "res://Character/character.tscn",
+                "res://Room.tscn",
+                "res://Machines/Scenes/dust_patch.tscn",
+                "res://Machines/Scenes/silicon_processor.tscn",
+                "res://Machines/Scenes/silicon_purifier.tscn",
+                "res://Machines/Scenes/silicon_growth_furnace.tscn",
+                "res://Machines/Scenes/wafer_slicer.tscn",
+                "res://Machines/Scenes/spin_coater.tscn",
+                "res://Machines/Scenes/wafer_analyzer.tscn"
+            ],
+            "nodes": [
+                {
+                    "name": "Level1",
+                    "type": "Node3D",
+                    "parent": null,
+                    "script": null
+                },
+                {
+                    "name": "WorldEnvironment",
+                    "type": "WorldEnvironment",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "DirectionalLight3D",
+                    "type": "DirectionalLight3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Objects",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Room",
+                    "type": null,
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch2",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch3",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch4",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch5",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch6",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch7",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch8",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch9",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch10",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch11",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "DustPatch12",
+                    "type": null,
+                    "parent": "Room",
+                    "script": null
+                },
+                {
+                    "name": "character",
+                    "type": null,
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Machines",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "SiliconProcessor",
+                    "type": null,
+                    "parent": "Machines",
+                    "script": null
+                },
+                {
+                    "name": "SiliconPurifier",
+                    "type": null,
+                    "parent": "Machines",
+                    "script": null
+                },
+                {
+                    "name": "silicon_growth_furnace",
+                    "type": null,
+                    "parent": "Machines",
+                    "script": null
+                },
+                {
+                    "name": "wafer_slicer",
+                    "type": null,
+                    "parent": "Machines",
+                    "script": null
+                },
+                {
+                    "name": "SpinCoater",
+                    "type": null,
+                    "parent": "Machines",
+                    "script": null
+                },
+                {
+                    "name": "WaferAnalyzer",
+                    "type": null,
+                    "parent": "Machines",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Room.tscn",
+            "resources": [],
+            "nodes": [
+                {
+                    "name": "Room",
+                    "type": "Node3D",
+                    "parent": null,
+                    "script": null
+                },
+                {
+                    "name": "Machines",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Floor",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "StaticBody3D",
+                    "type": "StaticBody3D",
+                    "parent": "Floor",
+                    "script": null
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": "Floor/StaticBody3D",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": "Floor/StaticBody3D",
+                    "script": null
+                },
+                {
+                    "name": "Walls",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Wall",
+                    "type": "StaticBody3D",
+                    "parent": "Walls",
+                    "script": null
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": "Walls/Wall",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": "Walls/Wall",
+                    "script": null
+                },
+                {
+                    "name": "Wall2",
+                    "type": "StaticBody3D",
+                    "parent": "Walls",
+                    "script": null
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": "Walls/Wall2",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": "Walls/Wall2",
+                    "script": null
+                },
+                {
+                    "name": "Wall3",
+                    "type": "StaticBody3D",
+                    "parent": "Walls",
+                    "script": null
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": "Walls/Wall3",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": "Walls/Wall3",
+                    "script": null
+                },
+                {
+                    "name": "Wall4",
+                    "type": "StaticBody3D",
+                    "parent": "Walls",
+                    "script": null
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": "Walls/Wall4",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": "Walls/Wall4",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Character\\character.tscn",
+            "resources": [
+                "res://Character/character.gd",
+                "res://Character/tool_manager.gd",
+                "res://Machines/Scenes/dust_collector.tscn",
+                "res://Scripts/inventory.gd",
+                "res://Character/inventory_ui.gd",
+                "res://Scripts/player_interaction.gd",
+                "res://UI/Scenes/spin_coater_ui.tscn",
+                "res://UI/wafer_analyzer_ui.gd",
+                "res://UI/Scenes/debug_inventory.tscn"
+            ],
+            "nodes": [
+                {
+                    "name": "character",
+                    "type": "CharacterBody3D",
+                    "parent": null,
+                    "script": "res://Character/character.gd"
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Camera3D",
+                    "type": "Camera3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "RayCast3D",
+                    "type": "RayCast3D",
+                    "parent": "Camera3D",
+                    "script": null
+                },
+                {
+                    "name": "ToolManager",
+                    "type": "Node3D",
+                    "parent": "Camera3D",
+                    "script": "res://Character/tool_manager.gd"
+                },
+                {
+                    "name": "DustCollector",
+                    "type": null,
+                    "parent": "Camera3D/ToolManager",
+                    "script": null
+                },
+                {
+                    "name": "CanvasLayer",
+                    "type": "CanvasLayer",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "InteractionLabel",
+                    "type": "Label",
+                    "parent": "CanvasLayer",
+                    "script": null
+                },
+                {
+                    "name": "InventoryUI",
+                    "type": "Control",
+                    "parent": "CanvasLayer",
+                    "script": "res://Character/inventory_ui.gd"
+                },
+                {
+                    "name": "Panel",
+                    "type": "Panel",
+                    "parent": "CanvasLayer/InventoryUI",
+                    "script": null
+                },
+                {
+                    "name": "ItemGrid",
+                    "type": "GridContainer",
+                    "parent": "CanvasLayer/InventoryUI/Panel",
+                    "script": null
+                },
+                {
+                    "name": "SpinCoaterUI",
+                    "type": null,
+                    "parent": "CanvasLayer",
+                    "script": null
+                },
+                {
+                    "name": "WaferAnalyzerUI",
+                    "type": "Control",
+                    "parent": "CanvasLayer",
+                    "script": "res://UI/wafer_analyzer_ui.gd"
+                },
+                {
+                    "name": "Panel",
+                    "type": "Panel",
+                    "parent": "CanvasLayer/WaferAnalyzerUI",
+                    "script": null
+                },
+                {
+                    "name": "VBoxContainer",
+                    "type": "VBoxContainer",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel",
+                    "script": null
+                },
+                {
+                    "name": "TitleLabel",
+                    "type": "Label",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "ResultsTitleLabel",
+                    "type": "Label",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "ThicknessLabel",
+                    "type": "Label",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "UniformityLabel",
+                    "type": "Label",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "DefectsLabel",
+                    "type": "Label",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "LoadButton",
+                    "type": "Button",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "UnloadButton",
+                    "type": "Button",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "CloseButton",
+                    "type": "Button",
+                    "parent": "CanvasLayer/WaferAnalyzerUI/Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                },
+                {
+                    "name": "Interaction",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/player_interaction.gd"
+                },
+                {
+                    "name": "DebugInventory",
+                    "type": null,
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\circuit_designer_ui.tscn",
+            "resources": [],
+            "nodes": [
+                {
+                    "name": "CircuitDesignerUI",
+                    "type": "Control",
+                    "parent": null,
+                    "script": null
+                },
+                {
+                    "name": "Panel",
+                    "type": "Panel",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "VBoxContainer",
+                    "type": "VBoxContainer",
+                    "parent": "Panel",
+                    "script": null
+                },
+                {
+                    "name": "TitleLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "ComponentsLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddComponentButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "CircuitArea",
+                    "type": "Control",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "CircuitWorkspace",
+                    "type": "Node2D",
+                    "parent": "Panel/VBoxContainer/CircuitArea",
+                    "script": null
+                },
+                {
+                    "name": "SelectedComponentLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "PropertiesPanel",
+                    "type": "VBoxContainer",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "ClearButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "CloseButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\debug_inventory.tscn",
+            "resources": [
+                "res://Scripts/debug_inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "DebugInventory",
+                    "type": "Control",
+                    "parent": null,
+                    "script": "res://Scripts/debug_inventory.gd"
+                },
+                {
+                    "name": "Panel",
+                    "type": "Panel",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "VBoxContainer",
+                    "type": "VBoxContainer",
+                    "parent": "Panel",
+                    "script": null
+                },
+                {
+                    "name": "Label",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddDustButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddRawSiliconButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddPureSiliconButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddWaferButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "ClearButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddTestCoatedWaferButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\inventory_slot.tscn",
+            "resources": [
+                "res://UI/inventory_slot.gd",
+                "res://UI/test_icon2.png"
+            ],
+            "nodes": [
+                {
+                    "name": "InventorySlot",
+                    "type": "Control",
+                    "parent": null,
+                    "script": "res://UI/inventory_slot.gd"
+                },
+                {
+                    "name": "TextureRect",
+                    "type": "TextureRect",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Title",
+                    "type": "Label",
+                    "parent": "TextureRect",
+                    "script": null
+                },
+                {
+                    "name": "Amount",
+                    "type": "Label",
+                    "parent": "TextureRect",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\spin_coater_ui.tscn",
+            "resources": [
+                "res://UI/spin_coater_ui.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "SpinCoaterUI",
+                    "type": "Control",
+                    "parent": null,
+                    "script": "res://UI/spin_coater_ui.gd"
+                },
+                {
+                    "name": "Panel",
+                    "type": "Panel",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "VBoxContainer",
+                    "type": "VBoxContainer",
+                    "parent": "Panel",
+                    "script": null
+                },
+                {
+                    "name": "Title",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "StatusLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "WaferLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "LoadWaferButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "ResistLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "ResistOption",
+                    "type": "OptionButton",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "SpinSpeedLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "SpinSpeedSlider",
+                    "type": "HSlider",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "SpinTimeLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "SpinTimeSlider",
+                    "type": "HSlider",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "TemperatureLabel",
+                    "type": "Label",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "TemperatureSlider",
+                    "type": "HSlider",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "CollectWaferButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "StartButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "CloseButton",
+                    "type": "Button",
+                    "parent": "Panel/VBoxContainer",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "UI\\Scenes\\Circuit Designer\\main.tscn",
+            "resources": [
+                "res://UI/Scenes/Circuit Designer/Scripts/main.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/schematic_editor.gd",
+                "res://UI/Scenes/Circuit Designer/Scripts/schematic_canvas.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "Main",
+                    "type": "Control",
+                    "parent": null,
+                    "script": "res://UI/Scenes/Circuit Designer/Scripts/main.gd"
+                },
+                {
+                    "name": "SchematicEditor",
+                    "type": "Control",
+                    "parent": ".",
+                    "script": "res://UI/Scenes/Circuit Designer/Scripts/schematic_editor.gd"
+                },
+                {
+                    "name": "SchematicCanvas",
+                    "type": "Control",
+                    "parent": "SchematicEditor",
+                    "script": "res://UI/Scenes/Circuit Designer/Scripts/schematic_canvas.gd"
+                },
+                {
+                    "name": "Toolbar",
+                    "type": "HBoxContainer",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "AddComponentButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "PrintNetlistButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "SimulateButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "TransientButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "TestDividerButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "ClearEditorButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "VerifyDesignButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "SaveSchematicButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "LoadSchematicButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "ResetViewButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "AddNetLabelButton",
+                    "type": "Button",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "TransientStepLabel",
+                    "type": "Label",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "TransientStepSpinBox",
+                    "type": "SpinBox",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "TransientDurationLabel",
+                    "type": "Label",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "TransientDurationSpinBox",
+                    "type": "SpinBox",
+                    "parent": "Toolbar",
+                    "script": null
+                },
+                {
+                    "name": "SchematicFileDialog",
+                    "type": "FileDialog",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ComponentChooser",
+                    "type": "Window",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ScrollContainer",
+                    "type": "ScrollContainer",
+                    "parent": "ComponentChooser",
+                    "script": null
+                },
+                {
+                    "name": "VBoxContainer",
+                    "type": "VBoxContainer",
+                    "parent": "ComponentChooser/ScrollContainer",
+                    "script": null
+                },
+                {
+                    "name": "Label",
+                    "type": "Label",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "ResistorButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddCapacitorButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddDiodeButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddNmosButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AddPmosButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "BatteryButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "VoltageSourceButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "AcVoltageSourceButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "GroundButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "VddButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "CancelButton",
+                    "type": "Button",
+                    "parent": "ComponentChooser/ScrollContainer/VBoxContainer",
+                    "script": null
+                },
+                {
+                    "name": "PanelContainer",
+                    "type": "PanelContainer",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "PropertiesPanel",
+                    "type": "VBoxContainer",
+                    "parent": "PanelContainer",
+                    "script": null
+                },
+                {
+                    "name": "SimulationResultsPanel",
+                    "type": "PanelContainer",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ContentContainer",
+                    "type": "VBoxContainer",
+                    "parent": "SimulationResultsPanel",
+                    "script": null
+                },
+                {
+                    "name": "Header",
+                    "type": "HBoxContainer",
+                    "parent": "SimulationResultsPanel/ContentContainer",
+                    "script": null
+                },
+                {
+                    "name": "Title",
+                    "type": "Label",
+                    "parent": "SimulationResultsPanel/ContentContainer/Header",
+                    "script": null
+                },
+                {
+                    "name": "CloseButton",
+                    "type": "Button",
+                    "parent": "SimulationResultsPanel/ContentContainer/Header",
+                    "script": null
+                },
+                {
+                    "name": "ScrollContainer",
+                    "type": "ScrollContainer",
+                    "parent": "SimulationResultsPanel/ContentContainer",
+                    "script": null
+                },
+                {
+                    "name": "Content",
+                    "type": "VBoxContainer",
+                    "parent": "SimulationResultsPanel/ContentContainer/ScrollContainer",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\dust_collector.tscn",
+            "resources": [
+                "res://Machines/Scripts/dust_collector.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "DustCollector",
+                    "type": "Node3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/dust_collector.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\dust_patch.tscn",
+            "resources": [
+                "res://Machines/Scripts/dust_patch.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "DustPatch",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/dust_patch.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\silicon_growth_furnace.tscn",
+            "resources": [
+                "res://Machines/Scripts/silicon_growth_furnace.gd",
+                "res://Scripts/inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "silicon_growth_furnace",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/silicon_growth_furnace.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                },
+                {
+                    "name": "Title",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ItemCount",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\silicon_processor.tscn",
+            "resources": [
+                "res://Machines/Scripts/silicon_processor.gd",
+                "res://Scripts/inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "SiliconProcessor",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/silicon_processor.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Title",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ItemCount",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\silicon_purifier.tscn",
+            "resources": [
+                "res://Machines/Scenes/silicon_purifier.gd",
+                "res://Scripts/inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "SiliconPurifier",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scenes/silicon_purifier.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                },
+                {
+                    "name": "ItemCount",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Title",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\spin_coater.tscn",
+            "resources": [
+                "res://Machines/Scripts/spin_coater.gd",
+                "res://Scripts/inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "SpinCoater",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/spin_coater.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\wafer_analyzer.tscn",
+            "resources": [
+                "res://Scripts/inventory.gd",
+                "res://Machines/Scripts/wafer_analyzer.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "WaferAnalyzer",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/wafer_analyzer.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\wafer_slicer.tscn",
+            "resources": [
+                "res://Scripts/inventory.gd",
+                "res://Machines/Scripts/wafer_slicer.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "wafer_slicer",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/wafer_slicer.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                },
+                {
+                    "name": "Title",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ItemCount",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        }
+    ]
+}
