@@ -80,7 +80,6 @@ def find_scene(graph, scene_path):
     }
 
     for edge in graph["edges"]:
-
         if edge["from"] != scene_id:
             continue
 
@@ -89,18 +88,34 @@ def find_scene(graph, scene_path):
 
         node_id = edge["to"]
 
+        # Node IDs have the format:
+        # node:<scene_path>:<node_name>
+        parts = node_id.split(":", 2)
+
+        if len(parts) != 3:
+            continue
+
+        node_name = parts[2]
+
         node_info = {
-            "node": node_id,
+            "node": node_name,
             "scripts": []
         }
 
         for node_edge in graph["edges"]:
-
             if (
                 node_edge["from"] == node_id
                 and node_edge["type"] == "attaches"
             ):
-                node_info["scripts"].append(node_edge["to"])
+                script_id = node_edge["to"]
+
+                # Script IDs have the format:
+                # script:<script_path>
+                script_path = script_id.replace("script:", "", 1)
+
+                node_info["scripts"].append(
+                    "res://" + script_path.replace("\\", "/")
+                )
 
         result["nodes"].append(node_info)
 
@@ -158,3 +173,65 @@ def find_scene_context(graph, scene_path):
         result["nodes"].append(node_info)
 
     return result
+
+def query(query_type, value):
+    graph = load_graph()
+
+    if query_type == "class":
+        return find_class(graph, value)
+
+    if query_type == "script":
+        return find_script(graph, value)
+
+    if query_type == "scene":
+        return find_scene(graph, value)
+
+    if query_type == "context":
+        return find_scene_context(graph, value)
+
+    raise ValueError(f"Unknown query type: {query_type}")
+
+def find_class_definition(graph, class_name):
+    class_id = f"class:{class_name}"
+
+    for edge in graph["edges"]:
+        if (
+            edge["from"] == class_id
+            and edge["type"] == "defined_by"
+        ):
+            return edge["to"]
+
+
+    return None
+
+def find_script_usage(graph, script_path):
+    script_path = normalize_path(script_path)
+    script_id = f"script:{script_path}"
+
+    usages = []
+
+    for edge in graph["edges"]:
+        if (
+            edge["to"] != script_id
+            or edge["type"] != "attaches"
+        ):
+            continue
+
+        node_id = edge["from"]
+
+        # Node IDs have the format:
+        # node:<scene_path>:<node_name>
+        parts = node_id.split(":", 2)
+
+        if len(parts) != 3:
+            continue
+
+        scene_path = parts[1]
+        node_name = parts[2]
+
+        usages.append({
+            "scene": scene_path,
+            "node": node_name
+        })
+
+    return usages
