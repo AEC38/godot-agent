@@ -28,18 +28,18 @@ function getText(node) {
     return source.slice(node.startIndex, node.endIndex);
 }
 
-function walk(node, result) {
+function walk(node, result, currentFunction = null) {
 
-    if (node.type === "extends_statement") {
-        const typeNode = node.childForFieldName("type");
+   if (node.type === "extends_statement") {
+    const typeNode = node.namedChildren[0];
 
         if (typeNode) {
             result.extends = getText(typeNode);
         }
     }
 
-    if (node.type === "class_definition") {
-        const nameNode = node.childForFieldName("name");
+    if (node.type === "class_name_statement") {
+    const nameNode = node.childForFieldName("name");
 
         if (nameNode) {
             result.class = getText(nameNode);
@@ -47,29 +47,82 @@ function walk(node, result) {
     }
 
     if (node.type === "function_definition") {
-        const nameNode = node.childForFieldName("name");
+    const nameNode = node.childForFieldName("name");
 
         if (nameNode) {
-            result.functions.push(getText(nameNode));
+            currentFunction = getText(nameNode);
+            result.functions.push(currentFunction);
         }
     }
 
-    if (node.type === "variable_statement") {
-        const nameNode = node.childForFieldName("name");
+    if (node.type === "signal_statement") {
+    const nameNode = node.childForFieldName("name");
 
         if (nameNode) {
-            result.variables.push(getText(nameNode));
+            result.signals.push(getText(nameNode));
+        }
+    }
+
+   if (node.type === "variable_statement") {
+    const nameNode = node.childForFieldName("name");
+    const typeNode = node.childForFieldName("type");
+    const valueNode = node.childForFieldName("value");
+
+        if (nameNode) {
+            const annotations = [];
+
+            for (const child of node.namedChildren) {
+                if (child.type === "annotations") {
+                    for (const annotation of child.namedChildren) {
+                        annotations.push(getText(annotation));
+                    }
+                }
+            }
+
+            result.variables.push({
+                "name": getText(nameNode),
+                "scope": currentFunction || "script",
+                "type": (
+                    typeNode && getText(typeNode) !== ":="
+                        ? getText(typeNode)
+                        : null
+                ),
+                "inferred": (
+                    !typeNode || getText(typeNode) === ":="
+                ),
+                "initializer": valueNode
+                    ? getText(valueNode)
+                    : null,
+                "annotations": annotations
+            });
         }
     }
 
     if (node.type === "call") {
-        const functionNode = node.namedChildren[0];
+    const functionNode = node.namedChildren[0];
 
-        if (functionNode) {
-            result.calls.push({
-                name: getText(functionNode),
-                type: functionNode.type
-            });
+    if (functionNode) {
+        const functionName = getText(functionNode);
+
+        result.calls.push({
+            name: functionName,
+            type: functionNode.type
+        });
+
+        if (functionName === "preload" || functionName === "load") {
+            const argumentsNode = node.namedChildren[1];
+
+            if (argumentsNode && argumentsNode.namedChildren.length > 0) {
+                const argumentNode = argumentsNode.namedChildren[0];
+
+                const rawPath = getText(argumentNode);
+
+                result.loads.push({
+                    type: functionName,
+                    path: rawPath.slice(1, -1)
+                });
+                }
+            }
         }
     }
 
@@ -91,7 +144,7 @@ function walk(node, result) {
     }
 
     for (const child of node.namedChildren) {
-        walk(child, result);
+        walk(child, result, currentFunction);
     }
 }
 
@@ -100,6 +153,7 @@ const result = {
     extends: null,
     functions: [],
     variables: [],
+    signals: [],
     calls: [],
     attributes: [],
     loads: []
@@ -164,10 +218,10 @@ def scan_gdscript(path: Path):
         "file": str(path.relative_to(GODOT_PROJECT)),
         "class": class_name,
         "extends": parsed["extends"],
-        "signals": [],
+        "signals": parsed["signals"],
         "functions": parsed["functions"],
         "variables": parsed["variables"],
-        "preloads": [],
+        "resources": parsed["loads"],
         "class_references": class_references,
         "calls": parsed["calls"],
         "attributes": parsed["attributes"],

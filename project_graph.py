@@ -52,6 +52,23 @@ def build_graph(index):
                 "type": relationship["type"],
             })
 
+        # Loaded resources
+
+        for resource in script["resources"]:
+            resource_path = normalize_path(resource["path"])
+            resource_id = f"resource:{resource_path}"
+
+            nodes.append({
+                "id": resource_id,
+                "type": "resource",
+                "name": resource_path,
+            })
+
+            edges.append({
+                "from": script_id,
+                "to": resource_id,
+                "type": resource["type"],
+            })
     # ---------------------------------------------------------
     # Classes
     # ---------------------------------------------------------

@@ -69,6 +69,23 @@ def find_script(graph, script_path):
 
     return result
 
+def find_script_variables(graph, script_path):
+    script_path = normalize_path(script_path)
+
+    with open("project_index.json", "r", encoding="utf-8") as f:
+        index = json.load(f)
+
+    for script in index["scripts"]:
+        if normalize_path(script["file"]) == script_path:
+            return {
+                "script": script_path,
+                "variables": script["variables"]
+            }
+
+    return {
+        "script": script_path,
+        "variables": []
+    }
 
 def find_scene(graph, scene_path):
     scene_path = normalize_path(scene_path)
@@ -174,14 +191,35 @@ def find_scene_context(graph, scene_path):
 
     return result
 
+def find_resource(graph, resource_path):
+    resource_path = normalize_path(resource_path)
+    resource_id = f"resource:{resource_path}"
+
+    result = {
+        "resource": resource_path,
+        "used_by": []
+    }
+
+    for edge in graph["edges"]:
+        if edge["to"] == resource_id and edge["type"] == "preload":
+            result["used_by"].append(edge["from"])
+
+    return result
+
 def query(query_type, value):
     graph = load_graph()
 
     if query_type == "class":
         return find_class(graph, value)
 
+    if query_type == "resource":
+        return find_resource(graph, value)
+    
     if query_type == "script":
         return find_script(graph, value)
+    
+    if query_type == "variables":
+        return find_script_variables(graph, value)
 
     if query_type == "scene":
         return find_scene(graph, value)

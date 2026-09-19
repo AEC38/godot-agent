@@ -698,6 +698,298 @@
             ]
         },
         {
+            "file": "Machines\\Scenes\\dust_collector.tscn",
+            "resources": [
+                "res://Machines/Scripts/dust_collector.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "DustCollector",
+                    "type": "Node3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/dust_collector.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\dust_patch.tscn",
+            "resources": [
+                "res://Machines/Scripts/dust_patch.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "DustPatch",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/dust_patch.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\silicon_growth_furnace.tscn",
+            "resources": [
+                "res://Machines/Scripts/silicon_growth_furnace.gd",
+                "res://Scripts/inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "silicon_growth_furnace",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/silicon_growth_furnace.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                },
+                {
+                    "name": "Title",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ItemCount",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\silicon_processor.tscn",
+            "resources": [
+                "res://Machines/Scripts/silicon_processor.gd",
+                "res://Scripts/inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "SiliconProcessor",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/silicon_processor.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Title",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ItemCount",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\silicon_purifier.tscn",
+            "resources": [
+                "res://Machines/Scenes/silicon_purifier.gd",
+                "res://Scripts/inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "SiliconPurifier",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scenes/silicon_purifier.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                },
+                {
+                    "name": "ItemCount",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Title",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\spin_coater.tscn",
+            "resources": [
+                "res://Machines/Scripts/spin_coater.gd",
+                "res://Scripts/inventory.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "SpinCoater",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/spin_coater.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\wafer_analyzer.tscn",
+            "resources": [
+                "res://Scripts/inventory.gd",
+                "res://Machines/Scripts/wafer_analyzer.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "WaferAnalyzer",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/wafer_analyzer.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                }
+            ]
+        },
+        {
+            "file": "Machines\\Scenes\\wafer_slicer.tscn",
+            "resources": [
+                "res://Scripts/inventory.gd",
+                "res://Machines/Scripts/wafer_slicer.gd"
+            ],
+            "nodes": [
+                {
+                    "name": "wafer_slicer",
+                    "type": "StaticBody3D",
+                    "parent": null,
+                    "script": "res://Machines/Scripts/wafer_slicer.gd"
+                },
+                {
+                    "name": "MeshInstance3D",
+                    "type": "MeshInstance3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "CollisionShape3D",
+                    "type": "CollisionShape3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Node3D",
+                    "parent": ".",
+                    "script": "res://Scripts/inventory.gd"
+                },
+                {
+                    "name": "Title",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                },
+                {
+                    "name": "ItemCount",
+                    "type": "Label3D",
+                    "parent": ".",
+                    "script": null
+                }
+            ]
+        },
+        {
             "file": "UI\\Scenes\\circuit_designer_ui.tscn",
             "resources": [],
             "nodes": [
@@ -1262,298 +1554,6 @@
                     "name": "Content",
                     "type": "VBoxContainer",
                     "parent": "SimulationResultsPanel/ContentContainer/ScrollContainer",
-                    "script": null
-                }
-            ]
-        },
-        {
-            "file": "Machines\\Scenes\\dust_collector.tscn",
-            "resources": [
-                "res://Machines/Scripts/dust_collector.gd"
-            ],
-            "nodes": [
-                {
-                    "name": "DustCollector",
-                    "type": "Node3D",
-                    "parent": null,
-                    "script": "res://Machines/Scripts/dust_collector.gd"
-                },
-                {
-                    "name": "MeshInstance3D",
-                    "type": "MeshInstance3D",
-                    "parent": ".",
-                    "script": null
-                }
-            ]
-        },
-        {
-            "file": "Machines\\Scenes\\dust_patch.tscn",
-            "resources": [
-                "res://Machines/Scripts/dust_patch.gd"
-            ],
-            "nodes": [
-                {
-                    "name": "DustPatch",
-                    "type": "StaticBody3D",
-                    "parent": null,
-                    "script": "res://Machines/Scripts/dust_patch.gd"
-                },
-                {
-                    "name": "MeshInstance3D",
-                    "type": "MeshInstance3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "CollisionShape3D",
-                    "type": "CollisionShape3D",
-                    "parent": ".",
-                    "script": null
-                }
-            ]
-        },
-        {
-            "file": "Machines\\Scenes\\silicon_growth_furnace.tscn",
-            "resources": [
-                "res://Machines/Scripts/silicon_growth_furnace.gd",
-                "res://Scripts/inventory.gd"
-            ],
-            "nodes": [
-                {
-                    "name": "silicon_growth_furnace",
-                    "type": "StaticBody3D",
-                    "parent": null,
-                    "script": "res://Machines/Scripts/silicon_growth_furnace.gd"
-                },
-                {
-                    "name": "MeshInstance3D",
-                    "type": "MeshInstance3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "CollisionShape3D",
-                    "type": "CollisionShape3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "Inventory",
-                    "type": "Node3D",
-                    "parent": ".",
-                    "script": "res://Scripts/inventory.gd"
-                },
-                {
-                    "name": "Title",
-                    "type": "Label3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "ItemCount",
-                    "type": "Label3D",
-                    "parent": ".",
-                    "script": null
-                }
-            ]
-        },
-        {
-            "file": "Machines\\Scenes\\silicon_processor.tscn",
-            "resources": [
-                "res://Machines/Scripts/silicon_processor.gd",
-                "res://Scripts/inventory.gd"
-            ],
-            "nodes": [
-                {
-                    "name": "SiliconProcessor",
-                    "type": "StaticBody3D",
-                    "parent": null,
-                    "script": "res://Machines/Scripts/silicon_processor.gd"
-                },
-                {
-                    "name": "MeshInstance3D",
-                    "type": "MeshInstance3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "CollisionShape3D",
-                    "type": "CollisionShape3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "Title",
-                    "type": "Label3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "ItemCount",
-                    "type": "Label3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "Inventory",
-                    "type": "Node3D",
-                    "parent": ".",
-                    "script": "res://Scripts/inventory.gd"
-                }
-            ]
-        },
-        {
-            "file": "Machines\\Scenes\\silicon_purifier.tscn",
-            "resources": [
-                "res://Machines/Scenes/silicon_purifier.gd",
-                "res://Scripts/inventory.gd"
-            ],
-            "nodes": [
-                {
-                    "name": "SiliconPurifier",
-                    "type": "StaticBody3D",
-                    "parent": null,
-                    "script": "res://Machines/Scenes/silicon_purifier.gd"
-                },
-                {
-                    "name": "MeshInstance3D",
-                    "type": "MeshInstance3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "CollisionShape3D",
-                    "type": "CollisionShape3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "Inventory",
-                    "type": "Node3D",
-                    "parent": ".",
-                    "script": "res://Scripts/inventory.gd"
-                },
-                {
-                    "name": "ItemCount",
-                    "type": "Label3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "Title",
-                    "type": "Label3D",
-                    "parent": ".",
-                    "script": null
-                }
-            ]
-        },
-        {
-            "file": "Machines\\Scenes\\spin_coater.tscn",
-            "resources": [
-                "res://Machines/Scripts/spin_coater.gd",
-                "res://Scripts/inventory.gd"
-            ],
-            "nodes": [
-                {
-                    "name": "SpinCoater",
-                    "type": "StaticBody3D",
-                    "parent": null,
-                    "script": "res://Machines/Scripts/spin_coater.gd"
-                },
-                {
-                    "name": "MeshInstance3D",
-                    "type": "MeshInstance3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "CollisionShape3D",
-                    "type": "CollisionShape3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "Inventory",
-                    "type": "Node3D",
-                    "parent": ".",
-                    "script": "res://Scripts/inventory.gd"
-                }
-            ]
-        },
-        {
-            "file": "Machines\\Scenes\\wafer_analyzer.tscn",
-            "resources": [
-                "res://Scripts/inventory.gd",
-                "res://Machines/Scripts/wafer_analyzer.gd"
-            ],
-            "nodes": [
-                {
-                    "name": "WaferAnalyzer",
-                    "type": "StaticBody3D",
-                    "parent": null,
-                    "script": "res://Machines/Scripts/wafer_analyzer.gd"
-                },
-                {
-                    "name": "MeshInstance3D",
-                    "type": "MeshInstance3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "CollisionShape3D",
-                    "type": "CollisionShape3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "Inventory",
-                    "type": "Node3D",
-                    "parent": ".",
-                    "script": "res://Scripts/inventory.gd"
-                }
-            ]
-        },
-        {
-            "file": "Machines\\Scenes\\wafer_slicer.tscn",
-            "resources": [
-                "res://Scripts/inventory.gd",
-                "res://Machines/Scripts/wafer_slicer.gd"
-            ],
-            "nodes": [
-                {
-                    "name": "wafer_slicer",
-                    "type": "StaticBody3D",
-                    "parent": null,
-                    "script": "res://Machines/Scripts/wafer_slicer.gd"
-                },
-                {
-                    "name": "MeshInstance3D",
-                    "type": "MeshInstance3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "CollisionShape3D",
-                    "type": "CollisionShape3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "Inventory",
-                    "type": "Node3D",
-                    "parent": ".",
-                    "script": "res://Scripts/inventory.gd"
-                },
-                {
-                    "name": "Title",
-                    "type": "Label3D",
-                    "parent": ".",
-                    "script": null
-                },
-                {
-                    "name": "ItemCount",
-                    "type": "Label3D",
-                    "parent": ".",
                     "script": null
                 }
             ]

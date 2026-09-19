@@ -16,6 +16,11 @@
       "name": "Character\\inventory_ui.gd"
     },
     {
+      "id": "resource:ui\\Scenes\\inventory_slot.tscn",
+      "type": "resource",
+      "name": "ui\\Scenes\\inventory_slot.tscn"
+    },
+    {
       "id": "script:Character\\tool_manager.gd",
       "type": "script",
       "name": "Character\\tool_manager.gd"
@@ -29,6 +34,46 @@
       "id": "script:Scripts\\inventory.gd",
       "type": "script",
       "name": "Scripts\\inventory.gd"
+    },
+    {
+      "id": "resource:data\\items\\dust.tres",
+      "type": "resource",
+      "name": "data\\items\\dust.tres"
+    },
+    {
+      "id": "resource:data\\items\\raw_silicon.tres",
+      "type": "resource",
+      "name": "data\\items\\raw_silicon.tres"
+    },
+    {
+      "id": "resource:data\\items\\pure_silicon.tres",
+      "type": "resource",
+      "name": "data\\items\\pure_silicon.tres"
+    },
+    {
+      "id": "resource:data\\items\\silicon_ingot.tres",
+      "type": "resource",
+      "name": "data\\items\\silicon_ingot.tres"
+    },
+    {
+      "id": "resource:data\\items\\wafer.tres",
+      "type": "resource",
+      "name": "data\\items\\wafer.tres"
+    },
+    {
+      "id": "resource:data\\items\\positive_photoresist.tres",
+      "type": "resource",
+      "name": "data\\items\\positive_photoresist.tres"
+    },
+    {
+      "id": "resource:data\\items\\negative_photoresist.tres",
+      "type": "resource",
+      "name": "data\\items\\negative_photoresist.tres"
+    },
+    {
+      "id": "resource:data\\items\\coated_wafer.tres",
+      "type": "resource",
+      "name": "data\\items\\coated_wafer.tres"
     },
     {
       "id": "script:Scripts\\item_data.gd",
@@ -61,6 +106,26 @@
       "name": "tests\\test_digital_logic.gd"
     },
     {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\main.tscn"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd"
+    },
+    {
       "id": "script:tests\\test_mna_circuit.gd",
       "type": "script",
       "name": "tests\\test_mna_circuit.gd"
@@ -69,6 +134,11 @@
       "id": "script:tests\\test_transistor_components.gd",
       "type": "script",
       "name": "tests\\test_transistor_components.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\main.tscn"
     },
     {
       "id": "script:UI\\inventory_slot.gd",
@@ -84,6 +154,61 @@
       "id": "script:UI\\wafer_analyzer_ui.gd",
       "type": "script",
       "name": "UI\\wafer_analyzer_ui.gd"
+    },
+    {
+      "id": "script:addons\\gd_mna_solver\\matrix_math.gd",
+      "type": "script",
+      "name": "addons\\gd_mna_solver\\matrix_math.gd"
+    },
+    {
+      "id": "script:addons\\gd_mna_solver\\mna_circuit.gd",
+      "type": "script",
+      "name": "addons\\gd_mna_solver\\mna_circuit.gd"
+    },
+    {
+      "id": "script:addons\\gd_mna_solver\\plugin.gd",
+      "type": "script",
+      "name": "addons\\gd_mna_solver\\plugin.gd"
+    },
+    {
+      "id": "script:Machines\\Scenes\\silicon_purifier.gd",
+      "type": "script",
+      "name": "Machines\\Scenes\\silicon_purifier.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\dust_collector.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\dust_collector.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\dust_patch.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\dust_patch.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\silicon_growth_furnace.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\silicon_growth_furnace.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\silicon_processor.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\silicon_processor.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\spin_coater.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\spin_coater.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\wafer_analyzer.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\wafer_analyzer.gd"
+    },
+    {
+      "id": "script:Machines\\Scripts\\wafer_slicer.gd",
+      "type": "script",
+      "name": "Machines\\Scripts\\wafer_slicer.gd"
     },
     {
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_connection.gd",
@@ -136,9 +261,29 @@
       "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd"
     },
     {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd"
+    },
+    {
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
       "type": "script",
       "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd"
     },
     {
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
@@ -146,9 +291,19 @@
       "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd"
     },
     {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd"
+    },
+    {
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
       "type": "script",
       "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd"
     },
     {
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
@@ -159,6 +314,26 @@
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
       "type": "script",
       "name": "UI\\Scenes\\Circuit Designer\\Scripts\\main.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\transient_voltage_plot.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\transient_voltage_plot.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd"
     },
     {
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd",
@@ -186,6 +361,26 @@
       "name": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd"
     },
     {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd"
+    },
+    {
+      "id": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "resource",
+      "name": "UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd"
+    },
+    {
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd",
       "type": "script",
       "name": "UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd"
@@ -209,61 +404,6 @@
       "id": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
       "type": "script",
       "name": "UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd"
-    },
-    {
-      "id": "script:Machines\\Scenes\\silicon_purifier.gd",
-      "type": "script",
-      "name": "Machines\\Scenes\\silicon_purifier.gd"
-    },
-    {
-      "id": "script:Machines\\Scripts\\dust_collector.gd",
-      "type": "script",
-      "name": "Machines\\Scripts\\dust_collector.gd"
-    },
-    {
-      "id": "script:Machines\\Scripts\\dust_patch.gd",
-      "type": "script",
-      "name": "Machines\\Scripts\\dust_patch.gd"
-    },
-    {
-      "id": "script:Machines\\Scripts\\silicon_growth_furnace.gd",
-      "type": "script",
-      "name": "Machines\\Scripts\\silicon_growth_furnace.gd"
-    },
-    {
-      "id": "script:Machines\\Scripts\\silicon_processor.gd",
-      "type": "script",
-      "name": "Machines\\Scripts\\silicon_processor.gd"
-    },
-    {
-      "id": "script:Machines\\Scripts\\spin_coater.gd",
-      "type": "script",
-      "name": "Machines\\Scripts\\spin_coater.gd"
-    },
-    {
-      "id": "script:Machines\\Scripts\\wafer_analyzer.gd",
-      "type": "script",
-      "name": "Machines\\Scripts\\wafer_analyzer.gd"
-    },
-    {
-      "id": "script:Machines\\Scripts\\wafer_slicer.gd",
-      "type": "script",
-      "name": "Machines\\Scripts\\wafer_slicer.gd"
-    },
-    {
-      "id": "script:addons\\gd_mna_solver\\matrix_math.gd",
-      "type": "script",
-      "name": "addons\\gd_mna_solver\\matrix_math.gd"
-    },
-    {
-      "id": "script:addons\\gd_mna_solver\\mna_circuit.gd",
-      "type": "script",
-      "name": "addons\\gd_mna_solver\\mna_circuit.gd"
-    },
-    {
-      "id": "script:addons\\gd_mna_solver\\plugin.gd",
-      "type": "script",
-      "name": "addons\\gd_mna_solver\\plugin.gd"
     },
     {
       "id": "class:Inventory",
@@ -294,6 +434,26 @@
       "id": "class:InventorySlot",
       "type": "class",
       "name": "InventorySlot"
+    },
+    {
+      "id": "class:MatrixMath",
+      "type": "class",
+      "name": "MatrixMath"
+    },
+    {
+      "id": "class:MNACircuit",
+      "type": "class",
+      "name": "MNACircuit"
+    },
+    {
+      "id": "class:DustCollector",
+      "type": "class",
+      "name": "DustCollector"
+    },
+    {
+      "id": "class:WaferAnalyzer",
+      "type": "class",
+      "name": "WaferAnalyzer"
     },
     {
       "id": "class:CircuitConnection",
@@ -409,26 +569,6 @@
       "id": "class:WireRouter",
       "type": "class",
       "name": "WireRouter"
-    },
-    {
-      "id": "class:DustCollector",
-      "type": "class",
-      "name": "DustCollector"
-    },
-    {
-      "id": "class:WaferAnalyzer",
-      "type": "class",
-      "name": "WaferAnalyzer"
-    },
-    {
-      "id": "class:MatrixMath",
-      "type": "class",
-      "name": "MatrixMath"
-    },
-    {
-      "id": "class:MNACircuit",
-      "type": "class",
-      "name": "MNACircuit"
     },
     {
       "id": "scene:digital_designer.tscn",
@@ -1688,6 +1828,11 @@
       "type": "uses"
     },
     {
+      "from": "script:Character\\inventory_ui.gd",
+      "to": "resource:ui\\Scenes\\inventory_slot.tscn",
+      "type": "preload"
+    },
+    {
       "from": "script:Scripts\\debug_inventory.gd",
       "to": "class:Inventory",
       "type": "uses"
@@ -1698,9 +1843,69 @@
       "type": "uses"
     },
     {
+      "from": "script:Scripts\\inventory.gd",
+      "to": "resource:data\\items\\dust.tres",
+      "type": "preload"
+    },
+    {
+      "from": "script:Scripts\\inventory.gd",
+      "to": "resource:data\\items\\raw_silicon.tres",
+      "type": "preload"
+    },
+    {
+      "from": "script:Scripts\\inventory.gd",
+      "to": "resource:data\\items\\pure_silicon.tres",
+      "type": "preload"
+    },
+    {
+      "from": "script:Scripts\\inventory.gd",
+      "to": "resource:data\\items\\silicon_ingot.tres",
+      "type": "preload"
+    },
+    {
+      "from": "script:Scripts\\inventory.gd",
+      "to": "resource:data\\items\\wafer.tres",
+      "type": "preload"
+    },
+    {
+      "from": "script:Scripts\\inventory.gd",
+      "to": "resource:data\\items\\positive_photoresist.tres",
+      "type": "preload"
+    },
+    {
+      "from": "script:Scripts\\inventory.gd",
+      "to": "resource:data\\items\\negative_photoresist.tres",
+      "type": "preload"
+    },
+    {
+      "from": "script:Scripts\\inventory.gd",
+      "to": "resource:data\\items\\coated_wafer.tres",
+      "type": "preload"
+    },
+    {
       "from": "script:tests\\test_digital_logic.gd",
       "to": "class:CircuitConnection",
       "type": "uses"
+    },
+    {
+      "from": "script:tests\\test_digital_logic.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "type": "preload"
+    },
+    {
+      "from": "script:tests\\test_digital_logic.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:tests\\test_digital_logic.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:tests\\test_digital_logic.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "preload"
     },
     {
       "from": "script:tests\\test_mna_circuit.gd",
@@ -1723,6 +1928,11 @@
       "type": "uses"
     },
     {
+      "from": "script:tests\\test_transistor_components.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\main.tscn",
+      "type": "preload"
+    },
+    {
       "from": "script:UI\\spin_coater_ui.gd",
       "to": "class:Inventory",
       "type": "uses"
@@ -1733,128 +1943,8 @@
       "type": "uses"
     },
     {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd",
-      "to": "class:ElectricalNet",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
-      "to": "class:ComponentData",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
-      "to": "class:CircuitSimulationResult",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
-      "to": "class:PropertyEditor",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
-      "to": "class:ElectricalNet",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
-      "to": "class:CircuitConnection",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
-      "to": "class:CircuitJunction",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
-      "to": "class:CircuitWire",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
-      "to": "class:CircuitSimulationResult",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
-      "to": "class:CircuitValidator",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
-      "to": "class:ElectricalNet",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
-      "to": "class:MNACircuit",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
-      "to": "class:PropertyEditor",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
-      "to": "class:CircuitTerminal",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
-      "to": "class:ComponentData",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
-      "to": "class:CircuitGraph",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
-      "to": "class:CircuitValidator",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
-      "to": "class:CircuitWire",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
-      "to": "class:HistoryManager",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
-      "to": "class:SchematicComponent",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
-      "to": "class:WireRouter",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
-      "to": "class:CircuitConnection",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
-      "to": "class:CircuitJunction",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
-      "to": "class:CircuitWire",
-      "type": "uses"
-    },
-    {
-      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
-      "to": "class:WirePreview",
+      "from": "script:addons\\gd_mna_solver\\mna_circuit.gd",
+      "to": "class:MatrixMath",
       "type": "uses"
     },
     {
@@ -1928,8 +2018,198 @@
       "type": "uses"
     },
     {
-      "from": "script:addons\\gd_mna_solver\\mna_circuit.gd",
-      "to": "class:MatrixMath",
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_graph.gd",
+      "to": "class:ElectricalNet",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "to": "class:ComponentData",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_data.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "to": "class:CircuitSimulationResult",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "to": "class:PropertyEditor",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_designer.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "to": "class:ElectricalNet",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+      "to": "class:CircuitConnection",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+      "to": "class:CircuitJunction",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\history_manager.gd",
+      "to": "class:CircuitWire",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:CircuitSimulationResult",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:CircuitValidator",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:ElectricalNet",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:MNACircuit",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "class:PropertyEditor",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\circuit_transient_settings.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\transient_voltage_plot.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_logic_simulator.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\main.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
+      "to": "class:CircuitTerminal",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_component.gd",
+      "to": "class:ComponentData",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:CircuitGraph",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:CircuitValidator",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:CircuitWire",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:HistoryManager",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:SchematicComponent",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "class:WireRouter",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_verification_result.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\net_label.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\digital_validator.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\schematic_editor.gd",
+      "to": "resource:UI\\Scenes\\Circuit Designer\\Scripts\\component_registry.gd",
+      "type": "preload"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "to": "class:CircuitConnection",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "to": "class:CircuitJunction",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "to": "class:CircuitWire",
+      "type": "uses"
+    },
+    {
+      "from": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
+      "to": "class:WirePreview",
       "type": "uses"
     },
     {
@@ -1960,6 +2240,26 @@
     {
       "from": "class:InventorySlot",
       "to": "script:UI\\inventory_slot.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:MatrixMath",
+      "to": "script:addons\\gd_mna_solver\\matrix_math.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:MNACircuit",
+      "to": "script:addons\\gd_mna_solver\\mna_circuit.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:DustCollector",
+      "to": "script:Machines\\Scripts\\dust_collector.gd",
+      "type": "defined_by"
+    },
+    {
+      "from": "class:WaferAnalyzer",
+      "to": "script:Machines\\Scripts\\wafer_analyzer.gd",
       "type": "defined_by"
     },
     {
@@ -2075,26 +2375,6 @@
     {
       "from": "class:WireRouter",
       "to": "script:UI\\Scenes\\Circuit Designer\\Scripts\\wire_router.gd",
-      "type": "defined_by"
-    },
-    {
-      "from": "class:DustCollector",
-      "to": "script:Machines\\Scripts\\dust_collector.gd",
-      "type": "defined_by"
-    },
-    {
-      "from": "class:WaferAnalyzer",
-      "to": "script:Machines\\Scripts\\wafer_analyzer.gd",
-      "type": "defined_by"
-    },
-    {
-      "from": "class:MatrixMath",
-      "to": "script:addons\\gd_mna_solver\\matrix_math.gd",
-      "type": "defined_by"
-    },
-    {
-      "from": "class:MNACircuit",
-      "to": "script:addons\\gd_mna_solver\\mna_circuit.gd",
       "type": "defined_by"
     },
     {

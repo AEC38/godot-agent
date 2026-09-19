@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "godot-project": {
+      "type": "stdio",
+      "command": "C:\\Users\\berke\\OneDrive\\Desktop\\godot-agent\\.venv312\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\berke\\OneDrive\\Desktop\\godot-agent\\mcp_server.py"
+      ]
+    }
+  }
+}
